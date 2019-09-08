@@ -1,0 +1,191 @@
+.m-p-header {
+    border-bottom: 2px solid #333;
+}
+
+.m-p-header-wrap {
+    width: 990px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.m-p-logo a {
+    width: 200px;
+    height: 78px;
+    display: block;
+    font-size: 0px;
+    float: left;
+    background: url(../images/module/logo.png) no-repeat;
+}
+
+.m-p-slogo {
+    width: 333px;
+    height: 80px;
+    display: block;
+    float: right;
+    background: url(../images/module/slogan.png) no-repeat right 0;
+}
+
+.m-p-main {
+    width: 990px;
+    margin: 0 auto;
+}
+
+.m-p-login-content {
+    position: relative;
+    padding-top: 35px;
+}
+
+.m-p-recommand-box {
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+}
+
+.m-p-recommand-box img {
+    max-width: 100%;
+}
+
+.m-p-login-content .m-p-login-box {
+    margin-left: 580px;
+}
+
+.m-p-login-box {
+    width: 400px;
+    padding-right: 30px;
+}
+
+.m-p-login-t .p-title {
+    color: #f60;
+    font-size: 20px;
+    float: left;
+}
+
+.m-p-login-t .p-other {
+    color: #999;
+    margin-top: 10px;
+    float: right;
+}
+
+.p-other-link {
+    color: #f60;
+    height: 16px;
+    line-height: 16px;
+}
+
+.p-other-link:hover {
+    color: #f60;
+    text-decoration: none;
+}
+
+.log-reg-box {
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+.log-reg-nav {
+    position: relative;
+}
+
+.log-reg-nav ul {
+    overflow: hidden;
+    width: 100%;
+}
+
+.log-reg-nav ul li {
+    width: 50%;
+    float: left;
+}
+
+.log-reg-nav ul li a {
+    position: relative;
+    color:#f60;
+    font: 20px/2.5 "";
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+.log-reg-nav ul li a.active:after {
+    content: "";
+    display:block;
+    position: absolute;
+    width:160px;
+    height:3px;
+    background:#f60;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:0 auto;
+}
+
+.p-passport-box {
+    padding: 15px 30px 20px;
+}
+
+.p-txtbox {
+    margin-top: 10px;
+    border: 1px solid #d9d9d9;
+    height: 48px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.p-txtbox input {
+    height: 18px;
+    background-color: #fff;
+    width: 285px;
+    border: none;
+    padding: 15px 10px 15px 38px;
+}
+
+.p-txtbox i {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 10px;
+    top: 14px;
+    background: url(../images/module/icon/reg.png) no-repeat;
+}
+
+.p-txtbox .icon-name {
+    background-position: 2px 2px;
+}
+
+.p-txtbox .icon-password {
+    background-position: 2px -21px;
+}
+
+.p-login-btn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.login-btn-submit {
+    padding: 14px 0;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #ff9c00;
+    border: 1px solid #f88600;
+    display: block;
+}
+
+.p-login-btn a:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #f8b500;
+}
+
+.m-p-footer {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.p-passport-r {
+    display: none;
+}
