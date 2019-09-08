@@ -141,10 +141,9 @@
                 let t = confirm("确认清空购物车吗?");
                 if (t) {
                     $.cookie("goods", null);
-                    this.getCookie();
+                    $('.cartmain2').hide();
+                    $('.cartmain').show();
                 }
-                this.setMoney();
-                this.setNum();
             }
         }
         setNum() {
