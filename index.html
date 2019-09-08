@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <title>海淘橙</title>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/banner.css" />
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <!-- 二级菜单 -->
+    <script src="js/htc.portal-1.8.3.min.js"></script>
+    <!-- <script src="js/g/htcextend.js"></script> -->
+    <!-- <script src="js/layer.min.js"></script> -->
+    <script src="js/banner.js"></script>
+</head>
+
+<body id='index'>
+    <header id="header">
+        <div class="topbar">
+            <div class="area topbarcon">
+                <ul class="navbox">
+                    <li class="item ucenter"><a href="#">我的海淘</a>
+                        <ul>
+                            <li><a href="#">我的订单</a></li>
+                            <li><a href="#">我的账户</a></li>
+
+                            <li><a href="#">我的消息</a></li>
+                            <li><a href="#">我的优惠券</a></li>
+                        </ul>
+                    </li>
+                    <li class="item cart"><a href="cart.html">购物车
+                            <strong>0</strong> 件</a></li>
+                    <li class="item order"><a href="#">订阅关注</a>
+                        <div class="ordernav">
+                            <div class="ordernav" style="display: none;">
+                                <div class="orderewm">
+                                    <div class="ewmcon">
+                                        <img src="images/help/ewm1.png" height="80" width="80" alt="">
+                                        <h5>微信订阅号</h5>
+                                    </div>
+                                    <div class="ewmcon">
+                                        <img src="images/help/ewm2.png" height="80" width="80" alt="">
+                                        <h5>微信企业号</h5>
+                                    </div>
+                                </div>
+                                <div class="orderatt">
+                                    <h5>关注我们</h5>
+                                    <div class="attshare">
+                                        <a href="#"></a>
+
+                                        <a href="#"></a>
+
+                                    </div>
+                                    <h5>邮件订阅</h5>
+                                    <div class="feed">
+                                        <input type="text" class="ftxt" id="txtTopEmail" placeholder="请输入您的邮箱地址">
+                                        <input type="button" value="订阅" class="fbtn" id="btnTopAddEmail">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="item helpcenter"><a href="#">帮助中心</a></li>
+                    <li class="item sitemap"><a href="#">网站导航</a>
+                        <div class="sitemapnav">
+
+                        </div>
+                    </li>
+                    <li class="item addfav"><a href="#">Ctrl+D</span></li>
+                </ul>
+                <div id="userinfo">
+                </div>
+            </div>
+        </div>
+        <div class="hdwraper">
+            <div id="top" class="area">
+                <a id="logo" href="#"><img src="images/logo.png" height="78" width="198" alt="海淘橙Logo"></a>
+                <div class="search">
+                    <div class="searchcon">
+                        <input type="text" placeholder="请输入关键词或商品链接" class="stxt" id="txt_search">
+                        <input type="button" value="" id="btn_search" class="sbtn">
+                    </div>
+                    <div class="keyword">
+                        <a href="#" target='_blank'>ECCO爱步</a>
+                        <a href="#" target='_blank'>阿迪达斯</a>
+                        <a href="#" target='_blank'>Columbia</a>
+                        <a href="#" target='_blank'>保加利亚红玫瑰</a>
+                        <a href="#" target='_blank'>男表</a>
+                        <a href="#" target='_blank'>女表/Kao</a>
+                        <a href="#" target='_blank'>爱他美</a>
+                    </div>
+                </div>
+                <div class="topslogan">海外直邮 直播直购 正品保障</div>
+            </div>
+        </div>
+        <div id="hdwraper" class="navwrapper">
+            <nav class="area mnav">
+                <div class="navigation">
+                    <h2><i></i><a href="#">所有商品类目</a></h2>
+                    <div class="navigationcon">
+                        <ul id="catalog" class="catalog">
+                            <li class="item item1">
+                                <div class="cataitem">
+                                    <h3><a href="#"><i></i>手表饰品</a></h3>
+                                    <p>
+                                        <a href="#">男表</a>
+                                        <a href="#">女表</a>
+                                        <a href="#">户外仪表</a>
+                                    </p>
+                                </div>
+                                <div class="subcat">
+                                    <div class="subcatcon">
+                                        <dl>
+                                            <dt>
+                                                <a href="#">男表</a></dt>
+                                            <dd><a href="#">高档表</a>
+                                                <a href="#">石英表</a>
+                                                <a href="#">机械表</a>
+                                            </dd>
+                                            <dt>
+                                                <a href="#">女表</a></dt>
+                                            <dd><a href="#">高档表</a>
+                                                <a href="#">石英表</a>
+                                                <a href="#">机械表</a>
+                                            </dd>
+
+                                            <dt>
+                                                <a href="#">户外仪表</a>
+                                            </dt>
+                                            <dd><a href="#">智能手环</a>
+                                                <a href="#">心率表</a>
+                                                <a href="#">户外仪表</a>
+                                            </dd>
+
+                                            <dt>
+                                                <a href="#">其他手表</a>
+                                            </dt>
+                                            <dd><a href="#">高档手表</a>
+                                                <a href="#">闹钟</a>
+                                                <a href="#">中性手表</a>
+                                                <a href="#">儿童手表</a>
+                                            </dd>
+
+                                            <dt>
+                                                <a href="#">饰品</a>
+                                            </dt>
+                                            <dd><a href="#">耳饰</a>
+                                                <a href="#">戒指</a>
+                                                <a href="#">手链/手镯</a>
+                                                <a href="#">项链</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <a href="#">
+                                        <img src="images/items/shoubiao.jpg" alt="" /></a><br />
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="item item2">
+                                <div class="cataitem">
+                                    <h3><a href="#"><i></i>数码生活</a>
+                                    </h3>
+                                    <p>
+
+                                        <a href="#">电子数码</a>
+
+                                        <a href="#">生活电器</a>
+
+                                        <a href="#">生活日用</a>
+
+                                    </p>
+                                </div>
+                                <div class="subcat">
+                                    <div class="subcatcon">
+                                        <dl>
+
+                                            <dt> <a href="#">电子数码</a>
+                                            </dt>
+                                            <dd><a href="#">智能穿戴</a>
+                                                <a href="#">摄影摄像</a>
+                                                <a href="#">数码配件</a>
+                                                <a href="#">时尚影音</a>
+                                                <a href="#">电脑</a>
+                                                <a href="#">电脑配件</a>
+                                                <a href="#">手机通讯</a>
+                                                <a href="#">手机配件</a>
+                                                <a href="#">办公用品</a>
+                                                <a href="#">电子教育</a>
+                                            </dd>
+
+                                            <dt> <a href="#">生活电器</a>
+                                            </dt>
+                                            <dd><a href="#">扫地机器人</a>
+                                                <a href="#">净水设备</a>
+                                                <a href="#">吸尘器</a>
+                                                <a href="#">空气净化器</a>
+                                                <a href="#">其他生活电器</a>
+                                            </dd>
+
+                                            <dt> <a href="#">生活日用</a>
+                                            </dt>
+                                            <dd><a href="#">个人护理</a>
+                                                <a href="#">净化除味</a>
+                                                <a href="#">收纳用品</a>
+                                            </dd>
+
+                                            <dt> <a href="#">厨房电器</a>
+                                            </dt>
+                                            <dd><a href="#">咖啡机</a>
+                                                <a href="#">料理/榨汁机</a>
+                                                <a href="#">烘培设备</a>
+                                                <a href="#">其他厨房电器</a>
+                                            </dd>
+
+                                            <dt> <a href="#">厨具</a>
+                                            </dt>
+                                            <dd><a href="#">烹饪锅具</a>
+                                                <a href="#">餐具</a>
+                                                <a href="#">水具酒具</a>
+                                                <a href="#">茶具/咖啡具</a>
+                                                <a href="#">厨房配件</a>
+                                            </dd>
+
+                                            <dt> <a href="#">家居家纺</a>
+                                            </dt>
+                                            <dd><a href="#">床品套件</a>
+                                                <a href="#">抱枕靠垫</a>
+                                                <a href="#">床单被罩</a>
+                                                <a href="#">窗帘/窗纱</a>
+                                                <a href="#">毯子</a>
+                                            </dd>
+
+                                            <dt> <a href="#">家装软饰</a>
+                                            </dt>
+                                            <dd><a href="#">墙贴/装饰</a>
+                                                <a href="#">摆件挂件</a>
+                                                <a href="#">创意家居</a>
+                                            </dd>
+
+                                        </dl>
+                                    </div>
+                                    <a href="#">
+                                        <img src="images/items/shuma.jpg" alt="" />
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="item item3">
+                                <div class="cataitem">
+                                    <h3><a href="#"><i></i>母婴用品</a></h3>
+                                    <p>
+                                        <a href="#">奶粉辅食</a>
+                                        <a href="#">洗护日用</a>
+                                        <a href="#">喂养日用</a>
+
+                                    </p>
+                                </div>
+                                <div class="subcat">
+                                    <div class="subcatcon">
+
+                                    </div>
+
+                                    <a href="#">
+                                        <img src="images/items/naifen.jpg" alt="" />
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="item item4">
+                                <div class="cataitem">
+                                    <h3><a href="#"><i></i>营养健康</a>
+                                    </h3>
+                                    <p>
+                                        <a href="#">强健男人</a>
+                                        <a href="#">儿童成长</a>
+                                        <a href="#">关爱老人</a>
+
+                                    </p>
+                                </div>
+                                <div class="subcat">
+                                    <div class="subcatcon">
+
+                                    </div>
+                                    <a href="#">
+                                        <img src="images/items/baojian.jpg" alt="" />
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="item item5">
+                                <div class="cataitem">
+                                    <h3><a href="#"><i></i>护肤美妆</a>
+                                    </h3>
+                                    <p>
+                                        <a href="#">面部护肤</a>
+                                        <a href="#">时尚彩妆</a>
+                                        <a href="#">身体护理</a>
+                                    </p>
+                                </div>
+                                <div class="subcat">
+                                    <div class="subcatcon">
+
+                                    </div>
+                                    <a href="#">
+                                        <img src="images/items/hufu.jpg" alt="" />
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="item item6">
+                                <div class="cataitem">
+                                    <h3><a href="#"><i></i>箱包、鞋靴</a>
+                                    </h3>
+                                    <p>
+                                        <a href="#">女鞋</a>
+                                        <a href="#">女包</a>
+                                        <a href="#">男包</a>
+                                    </p>
+                                </div>
+                                <div class="subcat">
+                                    <div class="subcatcon">
+                                    </div>
+                                    <div class="subcatad" style="white-space:normal;">
+                                        <a href="#">
+                                            <img src="images/items/xiezi.jpg" alt="" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="item item7">
+                                <div class="cataitem">
+                                    <h3><a href="#"><i></i>服装、户外</a></h3>
+                                    <p>
+                                        <a href="#">男装</a>
+                                        <a href="#">女装</a>
+                                        <a href="#">户外鞋服</a>
+                                    </p>
+                                </div>
+                                <div class="subcat">
+                                    <div class="subcatcon">
+                                    </div>
+                                    <a href="#">
+                                        <img src="images/items/bao.jpg" alt="" />
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slogo">
+                    <a href="#">
+                        <img src="images/slogo.png" height="37" width="123" alt="">
+                    </a>
+                </div>
+                <ul class="menu">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">饰品手表</a></li>
+                    <li><a href="#">数码生活</a></li>
+                    <li><a href="#">母婴用品</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="banner">
+        <div class="banner1 box">
+            <div class="imgbox">
+                <img src="images/banner/1.jpg" alt="">
+                <img src="images/banner/2.jpg" alt="">
+                <img src="images/banner/3.jpg" alt="">
+                <img src="images/banner/4.jpg" alt="">
+                <img src="images/banner/5.jpg" alt="">
+            </div>
+            <div class="btns">
+                <input type="button" id="left" value="">
+                <input type="button" id="right" value="">
+            </div>
+        </div>
+        <script>
+            $('.banner1').banner({
+                items: $('.banner1').find('img'), //必选,图片
+                left: $('.banner1').find('#left'), //可选,左按钮,传了就有功能
+                right: $('.banner1').find('#right'), //可选,右按钮,传了就有功能
+                index: 0, //可选,下标,默认0
+                list: true, //可选,下面的小按钮,默认true
+                autoPlay: true, //可选,自动播放,默认true
+                moveTime: 500, //可选,图片切换时间,默认200
+                delayTime: 3000 //可选,自动切换时间,默认2000
+            });
+        </script>
+        <div class="notice">
+            <div class="noticead">
+                <a href="#" /><img src="images/banner/guangao.jpg" width="195" height="260px" alt=""></a>
+            </div>
+            <div class="noticecon">
+                <h4>海淘橙公告<span class="more"><a href="#">更多></a></span></h4>
+                <ul class="noticelist">
+                    <li><a href="#">关于我们XXX</a></li>
+                    <li><a href="#">关于我们XXX</a></li>
+                    <li><a href="#">关于我们XXX</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section class="area content">
+        <section class="indexrecom">
+            <div class="rtabt">
+                <h3><a href="#">热门品牌</a></h3>
+                <ul>
+                    <li class="on"><a href="#">男士必备</a></li>
+                    <li><a href="#">魅力女人</a></li>
+                    <li><a href="#">妈妈宝贝</a></li>
+                    <li><a href="#">大牌专项</a></li>
+                </ul>
+                <span class="more"><a href="#">更多</a></span>
+            </div>
+            <div class="rtabcon">
+                <div class="rtabc_recom">
+                    <div class="rtabad">
+                        <a href="#"><img src="images/main/i10.jpg" alt="" /></a>
+                    </div>
+                    <div class="rtabbrand">
+                        <ul class="rebrandlist cl">
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m0.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m1.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m2.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m3.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m4.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m5.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m6.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m7.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m8.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m9.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m3.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m4.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rtabsad">
+                        <ul>
+                            <li>
+                                <a href="#"><img src="images/main/i11.jpg" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/main/i12.jpg" alt="" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rtabc_brand">
+                    <div class="rtabad">
+                        <a href="#"><img src="images/main/i4.jpg" alt="" /></a></div>
+                    <div class="rtabbrand">
+                        <ul class="rebrandlist cl">
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m6.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m7.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m7.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m4.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m5.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m6.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m8.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m9.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m3.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m8.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m9.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m4.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rtabsad">
+                        <ul>
+                            <li>
+                                <a href="#"><img src="images/main/i5.jpg" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/main/i6.jpg" alt="" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rtabc_brand">
+                    <div class="rtabad">
+                        <a href="#"><img src="images/main/i7.jpg" alt="" /></a></div>
+                    <div class="rtabbrand">
+                        <ul class="rebrandlist cl">
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m6.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m7.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m8.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m9.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m4.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m5.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m6.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m7.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m8.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m9.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m3.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m4.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="rtabsad">
+                        <ul>
+                            <li>
+                                <a href="#"><img src="images/main/i8.jpg" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/main/i9.jpg" alt="" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rtabc_brand">
+                    <div class="rtabad">
+                        <a href="#"><img src="images/main/i1.jpg" alt="" /></a></div>
+                    <div class="rtabbrand">
+                        <ul class="rebrandlist cl">
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m4.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m4.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m8.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m9.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m3.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m4.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m5.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m6.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m7.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m8.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m9.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/main/m3.jpg" height="93" width="189" alt="">
+                                </a>
+                                <h6>
+                                    <a href="#" class="addfav jq_brand" title="收藏该品牌"></a>
+                                </h6>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rtabsad">
+                        <ul>
+                            <li>
+                                <a href="#"><img src="images/main/i2.jpg" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/main/i3.jpg" alt="" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mainbox">
+            <div class="maincon cl">
+                <div class="mleft">
+                    <div class="ifast">
+                        <h2><a href="#">闪购直邮 正品直发 全场包邮</a></h2>
+                        <dl class="inav">
+                            <dt><a href="#">母婴用品</a></dt>
+                            <dd>
+                                <ul class="cl">
+                                    <li><a href="#">奶粉/辅食</a></li>
+                                    <li><a href="#">奶瓶/奶嘴</a></li>
+                                    <li><a href="#">喂养餐具</a></li>
+                                    <li><a href="#">纸尿裤/湿巾</a></li>
+                                    <li><a href="#">卫生巾/护垫</a></li>
+                                    <li><a href="#">洗护日用</a></li>
+                                    <li><a href="#">宝宝营养</a></li>
+                                </ul>
+                            </dd>
+                            <dt><a href="#">美食保健</a></dt>
+                            <dd>
+                                <ul class="cl">
+                                    <li><a href="#">维生素/矿物质</a></li>
+                                    <li><a href="#">鱼油</a></li>
+                                    <li><a href="#">补肾护肝</a></li>
+                                    <li><a href="#">关节骨骼</a></li>
+                                </ul>
+                            </dd>
+                            <dt><a href="#">护肤彩妆</a></dt>
+                            <dd>
+                                <ul class="cl">
+                                    <li><a href="#">洁面/卸妆</a></li>
+                                    <li><a href="#">面霜乳液</a></li>
+                                    <li><a href="#">眼霜/唇霜</a></li>
+                                    <li><a href="#">面膜/精华</a></li>
+                                    <li><a href="#">爽肤水</a></li>
+                                    <li><a href="#">男士专区</a></li>
+                                    <li><a href="#">防晒/修护</a></li>
+                                    <li><a href="#">BB/CC霜</a></li>
+                                    <li><a href="#">身体洗护</a></li>
+                                    <li><a href="#">香水</a></li>
+                                    <li><a href="#">彩妆</a></li>
+                                    <li><a href="#">粉饼/粉底</a></li>
+                                </ul>
+                            </dd>
+                            <dt><a href="#">数码家居</a></dt>
+                            <dd>
+                                <ul class="cl">
+                                    <li><a href="#">电子数码</a></li>
+                                </ul>
+                            </dd>
+
+
+                        </dl>
+                    </div>
+                </div>
+                <div class="mcenter">
+                    <div class="mad">
+                        <a href="#">
+                            <img src="images/adv/a1.jpg" alt="" />
+                        </a>
+                    </div>
+                    <div class="mrepro">
+                        <ul class="reporlist cl">
+                            <li></li>
+                            <!-- <li>
+                                <a href="#">
+                                    <h6>澳洲swisse瑞思 护肝保肝</h6>
+                                    <div class="pic">
+                                        <span class="img-inner">
+                                            <img src="images/goods/1.jpg" height="120" width="120">
+                                        </span>
+                                    </div>
+                                    <div class="price">
+                                        <span class="newprice"><em>海淘价：</em>￥<strong>95</strong></span>
+                                        <span class="oldprice"><del>￥</del></span>
+                                    </div>
+                                    <span class="no">1</span>
+                                </a>
+                            </li>
+                             -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="mright">
+                    <ul class="mradlist">
+                        <li>
+                            <a href="#"><img src="images/adv/a11.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/adv/a12.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/adv/a13.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/adv/a14.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/adv/a15.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/adv/a16.jpg" alt="" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="mainbox">
+            <div class="mtitle">
+                <span class="more"><a href="#">更多</a></span>
+                <h2 class="mt1"><a href="#">欧美馆</a>
+                </h2>
+            </div>
+            <div class="maincon cl">
+                <div class="mleft">
+                    <div class="ifast">
+                        <dl class="inav">
+                            <dt><a href="#">热门分类</a>
+                            </dt>
+                            <dd>
+                                <ul class="cl">
+                                    <li><a href="#">家居厨电</a></li>
+                                </ul>
+                            </dd>
+                            <dt>品牌</dt>
+                            <dd>
+                                <ul class="cl">
+                                    <li><a href="#">GNC</a></li>
+                                    <li><a href="#">Mead Johnson</a></li>
+                                    <li><a href="#">Childlife</a></li>
+                                    <li><a href="#">loreal</a></li>
+                                    <li><a href="#">Giorgio Armani</a></li>
+                                    <li><a href="#">The Body Shop</a></li>
+                                    <li><a href="#">fresh</a></li>
+                                    <li><a href="#">lee</a></li>
+                                    <li><a href="#">comotomo</a></li>
+                                    <li><a href="#">Similac</a></li>
+                                    <li><a href="#">Kirkland Signature</a></li>
+                                </ul>
+                            </dd>
+                            <dt>热搜</dt>
+                            <dd>
+                                <ul class="cl">
+                                    <li><a href="#">日用百货</a></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="mcenter">
+                    <div class="mad">
+                        <a href="#"><img src="images/adv/a2.jpg" alt="" /></a></div>
+                    <div class="mrepro">
+                        <ul class="reporlist cl">
+                            <!--  -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="mright">
+                    <ul class="mradlist">
+                        <li>
+                            <a href="#"><img src="images/adv/a21.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/adv/a22.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/adv/a23.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/adv/a24.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/adv/a25.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/adv/a26.jpg" alt="" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- begin 精选分类 -->
+        <section id="mtab" class="mainbot">
+            <div class="mtabt">
+                <h3>精选分类</h3>
+                <ul>
+                    <li class="on"><a href="#">手表饰品</a></li>
+                    <li><a href="#">数码、家居</a></li>
+                    <li><a href="#">营养健康</a></li>
+                    <li><a href="#">护肤美妆</a></li>
+                    <li><a href="#">箱包、鞋靴</a></li>
+                    <li><a href="#">服装、户外</a></li>
+
+                </ul>
+            </div>
+            <div class="mtabcon">
+
+                <div class="mtabc cl">
+                    <div class="mbleft">
+                        <div class="ifast">
+                            <dl class="inav">
+                                <dt>推荐品牌</dt>
+                                <dd>
+                                    <ul class="cl">
+                                        <li><a href="#">Columbia</a></li>
+                                        <li><a href="#">Levi's</a></li>
+                                        <li><a href="#">Tissot</a></li>
+                                        <li><a href="#">CITIZEN</a></li>
+                                    </ul>
+                                </dd>
+                                <dt>热搜</dt>
+                                <dd>
+                                    <ul class="cl">
+
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <div class="vmore"><a href="#">更多</a></div>
+                        </div>
+                    </div>
+                    <div class="mbcenter">
+                        <ul class="plist cl">
+                            <!-- <li>
+                                <a href="#">
+                                    <img src="images/goods/13.jpg" height="150" width="150">
+                                    <h6>Columbia 哥伦比亚 男士真皮 皮带</h6>
+                                    <p><span class="newprice"><em>海淘价：</em>￥<strong>152.52</strong></span></p>
+                                </a>
+                            </li> -->
+                        </ul>
+                    </div>
+                    <div class="mbright">
+                        <a href="#"><img src="images/adv/a3.jpg" alt="" /></a>
+                    </div>
+                </div>
+
+                <div class="mtabc cl">
+                    <div class="mbleft">
+                        <div class="ifast">
+                            <dl class="inav">
+                                <dt>推荐品牌</dt>
+                                <dd>
+                                    <ul class="cl">
+                                        <li><a href="#">Panasonic</a></li>
+                                    </ul>
+                                </dd>
+                                <dt>热搜</dt>
+                                <dd>
+                                    <ul class="cl">
+                                        <li><a href="#">烹饪锅具</a></li>
+                                        <li><a href="#">餐具</a></li>
+                                        <li><a href="#">厨房配件</a></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <div class="vmore"><a href="#">更多</a></div>
+                        </div>
+                    </div>
+                    <div class="mbcenter">
+                        <ul class="plist cl">
+
+                        </ul>
+                    </div>
+                    <div class="mbright">
+                        <a href="#"><img src="images/adv/a4.jpg" alt="" /></a>
+                    </div>
+                </div>
+
+                <div class="mtabc cl">
+                    <div class="mbleft">
+                        <div class="ifast">
+                            <dl class="inav">
+                                <dt>推荐品牌</dt>
+                                <dd>
+                                    <ul class="cl">
+                                        <li><a href="#">GNC</a></li>
+                                        <li><a href="#">Swisse</a></li>
+                                        <li><a href="#">Ddrops</a></li>
+                                        <li><a href="#">Muscletech</a></li>
+                                        <li><a href="#">222</a></li>
+                                    </ul>
+                                </dd>
+                                <dt>热搜</dt>
+                                <dd>
+                                    <ul class="cl">
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <div class="vmore"><a href="#">更多</a></div>
+                        </div>
+                    </div>
+                    <div class="mbcenter">
+                        <ul class="plist cl">
+
+                        </ul>
+                    </div>
+                    <div class="mbright">
+                        <a href="#"><img src="images/adv/a5.jpg" alt="" /></a>
+                    </div>
+                </div>
+
+                <div class="mtabc cl">
+                    <div class="mbleft">
+                        <div class="ifast">
+                            <dl class="inav">
+                                <dt>推荐品牌</dt>
+                                <dd>
+                                    <ul class="cl">
+                                        <li><a href="#">loreal</a></li>
+                                        <li><a href="#">Olay</a></li>
+                                        <li><a href="#">fresh</a></li>
+                                        <li><a href="#">Kirkland Signature</a></li>
+                                    </ul>
+                                </dd>
+                                <dt>热搜</dt>
+                                <dd>
+                                    <ul class="cl">
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <div class="vmore"><a href="#">更多</a></div>
+                        </div>
+                    </div>
+                    <div class="mbcenter">
+                        <ul class="plist cl">
+
+                        </ul>
+                    </div>
+                    <div class="mbright">
+                        <a href="#"><img src="images/adv/a6.jpg" alt="" /></a>
+                    </div>
+                </div>
+
+                <div class="mtabc cl">
+                    <div class="mbleft">
+                        <div class="ifast">
+                            <dl class="inav">
+                                <dt>推荐品牌</dt>
+                                <dd>
+                                    <ul class="cl">
+                                        <li><a href="#">ECCO</a></li>
+                                        <li><a href="#">Clarks</a></li>
+                                        <li><a href="#">Samsonite</a></li>
+                                    </ul>
+                                </dd>
+                                <dt>热搜</dt>
+                                <dd>
+                                    <ul class="cl">
+
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <div class="vmore"><a href="#">更多</a></div>
+                        </div>
+                    </div>
+                    <div class="mbcenter">
+                        <ul class="plist cl">
+
+                        </ul>
+                    </div>
+                    <div class="mbright">
+                        <a href="#"><img src="images/adv/a7.jpg" alt="" /></a>
+                    </div>
+                </div>
+
+                <div class="mtabc cl">
+                    <div class="mbleft">
+                        <div class="ifast">
+                            <dl class="inav">
+                                <dt>推荐品牌</dt>
+                                <dd>
+                                    <ul class="cl">
+                                        <li><a href="#">lee</a></li>
+                                    </ul>
+                                </dd>
+                                <dt>热搜</dt>
+                                <dd>
+                                    <ul class="cl">
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <div class="vmore"><a href="#">更多</a></div>
+                        </div>
+                    </div>
+                    <div class="mbcenter">
+                        <ul class="plist cl">
+
+                        </ul>
+                    </div>
+                    <div class="mbright">
+                        <a href="#"><img src="images/adv/a8.jpg" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end 精选分类 -->
+    </section>
+
+
+    <footer id="footer">
+        <div class="botslogan">
+            <div class="botslogancon">
+                <img src="images/module/bot_slogan.png" height="96" width="950" alt="">
+            </div>
+        </div>
+        <div class="area ft">
+            <div class="botbox cl">
+                <div class="botnav">
+                    <dl class="bn1">
+                        <dt>
+                            <a href="#">海淘橙</a>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#">关于我们</a></li>
+                                <li><a href="#">免责声明</a></li>
+                                <li><a href="#">联系我们</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="bn2">
+                        <dt>
+                            能做什么
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#">意见/建议</a></li>
+                                <li><a href="#">海淘购物</a></li>
+                                <li><a href="#">友情链接</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="bn3">
+                        <dt>
+                            <a href="#">帮助中心</a>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#">新手指南</a></li>
+                                <li><a href="#">常见问题</a></li>
+                                <li><a href="#">正品保证</a></li>
+                                <li><a href="#">物流配送</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="bn4">
+                        <dt>
+                            <a href="#">资讯频道</a>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#">海淘资讯</a></li>
+                                <li><a href="#">网站公告</a></li>
+                                <li><a href="#">网站地图</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="botewm">
+                    <ul class="cl">
+                        <li>
+                            <h5>微信订阅号</h5>
+                            <p>扫一扫有惊喜</p>
+                            <div class="ewmpic">
+                                <img src="images/help/ewm1.png" height="80" width="80" alt="">
+                                <span class="bigewm"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <h5>微信服务号</h5>
+                            <p>扫一扫有惊喜</p>
+                            <div class="ewmpic">
+                                <img src="images/help/ewm2.png" height="80" width="80" alt="">
+                                <span class="bigewm"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="attus">
+                    <h5>关注我们</h5>
+                    <ul class="attshare">
+                        <li><a href="#"></a>
+                        </li>
+
+                        <li><a href="#"></a></li>
+
+                    </ul>
+                    <h5>邮件订阅</h5>
+                    <div class="feed" id="div_feed">
+                        <input type="text" id="txtEmail" class="ftxt" placeholder="请输入您的邮箱地址，订阅最新优惠">
+                        <input type="button" id="btnAddEmail" value="订阅" class="fbtn">
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>
+                    Copyright 2012-2016 海淘橙 haitaocheng.com. All Rights Reserved.
+                    <a ref="nofollow" href="#">粤ICP备14073754号-1</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/js2.0/display.js"></script>
+    <!-- <script src="js/common.js"></script> -->
+    <!-- <script src="js/g/jquery.scrollLoading.js"></script> -->
+
+    <!-- <script src="js/jquery.autocomplete.min.js"></script> -->
+    <script src="js/jquery.SuperSlide.js"></script>
+    <!-- 加载图片 -->
+    <!-- <script src="js/jquery.placeholder.js"></script> -->
+    <!-- 头登录 -->
+    <!-- <script src="js/header.js"></script> -->
+    <!-- 折叠商品 -->
+    <!-- <script src="js/my/hover.js"></script> -->
+    <script src="js/base.js"></script>
+    <script src="js/home.js"></script>
+
+    <!-- <script type="text/javascript" src="js/htc_sidebar.js"></script> -->
+
+    <!-- <script src="js/index.js"></script> -->
+
+</body>
+
+</html>

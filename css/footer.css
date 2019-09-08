@@ -1,0 +1,167 @@
+#footer {
+    background-color: #333;
+    width: 100%;
+    clear: both;
+    min-width: 980px;
+    margin: auto;
+}
+
+.botslogan {
+    background-color: #ff9000;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.botbox {
+    border-bottom: 1px dashed #201b1b;
+    padding-top: 8px;
+    color: #f9f9f9;
+}
+
+.botnav {
+    float: left;
+    width: 518px;
+    height: 185px;
+    border-right: 1px dashed #201b1b;
+    overflow: hidden;
+    padding-left: 50px;
+}
+
+.botnav dl {
+    float: left;
+    width: 129px;
+    padding-top: 25px;
+}
+
+.botnav dl dt {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #f9f9f9;
+    font-weight: bold;
+}
+
+.botnav dl dt a {
+    color: #f9f9f9;
+}
+
+.botnav dl dd li {
+    line-height: 30px;
+}
+
+.botnav dl dd a {
+    color: #bfbfbf;
+}
+
+.botnav dl dd a:hover {
+    color: #ff9000;
+}
+
+.botewm {
+    width: 244px;
+    height: 165px;
+    overflow: hidden;
+    border-left: 1px dashed #737373;
+    border-right: 1px dashed #201b1b;
+    float: left;
+    padding-top: 20px;
+}
+
+.botewm li {
+    width: 80px;
+    text-align: center;
+    padding-left: 28px;
+    float: left;
+}
+
+.botewm li h5 {
+    font-size: 14px;
+}
+
+.botewm li p {
+    color: #bfbfbf;
+    margin-bottom: 18px;
+}
+
+.botewm li .ewmpic {
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.botewm li .ewmpic .bigewm {
+    display: none;
+    position: absolute;
+}
+
+.attus {
+    float: left;
+    width: 351px;
+    border-left: 1px dashed #737373;
+    height: 165px;
+    padding-top: 20px;
+    padding-left: 24px;
+}
+
+.attus h5 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.attus .attshare {
+    height: 45px;
+}
+
+.attus .attshare li {
+    float: left;
+    margin-right: 11px;
+}
+
+.attus .attshare li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../images/module/icon/shareicon.png) no-repeat;
+}
+
+.attus .attshare li a.a2 {
+    background-position: -40px 0;
+}
+
+.attus .attshare li a.a3 {
+    background-position: -80px 0;
+}
+
+.attus .attshare li a.a4 {
+    background-position: -120px 0;
+}
+
+.attus .feed .ftxt {
+    border: 2px solid #636161;
+    width: 213px;
+    height: 21px;
+    line-height: 21px;
+    padding: 8px;
+    background-color: #fff;
+}
+
+.attus .feed .fbtn {
+    width: 57px;
+    height: 41px;
+    background: #ff9000;
+    color: #fff;
+    border: 0 none;
+    cursor: pointer;
+    font: bold 14px/40px "\5fae\8f6f\96c5\9ed1", Arial;
+}
+
+.copyright {
+    border-top: 1px dashed #737373;
+    text-align: center;
+    padding: 15px;
+    color: #8d8d8d;
+}
+
+.copyright a:link,
+.copyright a:visited {
+    color: #8d8d8d
+}

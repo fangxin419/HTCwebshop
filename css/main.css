@@ -1,0 +1,658 @@
+.indexhotsale {
+    overflow: hidden;
+    height: 200px;
+    margin-bottom: 30px;
+    background-color: #fff;
+}
+
+.indexhotsale h2 {
+    text-indent: -9999px;
+    overflow: hidden;
+    background: url(../images/index/hotsaletitle.png) no-repeat;
+    width: 220px;
+    height: 200px;
+    float: left;
+    margin-right: 5px;
+}
+
+.ihotsalecon {
+    width: 975px;
+    float: right;
+    height: 200px;
+    overflow: hidden;
+}
+
+.ihotsalecon .bd {
+    width: 975px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.ihotsalecon .bd li {
+    float: left;
+    position: relative;
+    width: 195px;
+    background-color: #ccc;
+    height: 200px;
+    overflow: hidden;
+}
+
+.ihotsalecon .bd li h5 {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    color: #fff;
+    width: 195px;
+    left: 0;
+    height: 20px;
+    line-height: 20px;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.ihotsalecon .bd li a {
+    background-color: #000;
+    display: block;
+    width: 195px;
+    height: 200px;
+}
+
+.ihotsalerep {
+    float: right;
+    width: 220px;
+    background: url(../images/index/hotsalebg.jpg) repeat-x;
+    height: 174px;
+    overflow: hidden;
+    padding-top: 6px;
+}
+
+.ihotsalerep h3 {
+    text-align: center;
+    font-size: 16px;
+    color: #464646;
+}
+
+.ihotsalerepcon {
+    width: 200px;
+    height: 150px;
+    margin: auto;
+    position: relative;
+}
+
+.ihotsalerepcon .bd {
+    width: 150px;
+    height: 140px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.ihotsalerepcon .bd li {
+    float: left;
+    position: relative;
+    width: 150px;
+    height: 140px;
+    text-align: center;
+}
+
+.ihotsalerepcon .bd li h5 {
+    padding-left: 31px;
+    background: url(../images/index/colck.png) no-repeat -35px 0;
+    width: 90px;
+    height: 21px;
+    position: absolute;
+    left: 15px;
+    bottom: 0px;
+    line-height: 21px;
+    color: #fff;
+    font-size: 17px;
+    font-family: Arial;
+    font-weight: 400;
+}
+
+.ihotsalerepcon .prev,
+.ihotsalerepcon .next {
+    font: bold 30px/1 simsun;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    color: #cfcfcf;
+}
+
+.ihotsalerepcon .next {
+    left: auto;
+    right: 0;
+}
+
+.ihotsalerepcon .prev:hover,
+.ihotsalerepcon .next:hover {
+    color: #ff9000;
+}
+
+.indexrecom {
+    clear: both;
+    margin-bottom: 30px;
+}
+
+.rtabt {
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.rtabt h3 {
+    float: left;
+    width: 240px;
+    height: 30px;
+    background: url(../images/index/title.png) no-repeat 0 5px;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.rtabt ul {
+    float: left;
+    width: 500px;
+}
+
+.rtabt li {
+    float: left;
+    padding: 0 10px;
+}
+
+.rtabt li a {
+    display: inline-block;
+    height: 30px;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.rtabt li.on a {
+    background: url(../images/index/tab_on.png) no-repeat center bottom;
+    color: #fc5f00;
+}
+
+.rtabt .more {
+    float: right;
+    padding-right: 12px;
+    background: url(../images/module/icon/hdicon.png) no-repeat right 5px;
+}
+
+.rtabcon {
+    height: 282px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.rtabad {
+    float: left;
+    width: 220px;
+}
+
+.rebrandlist li {
+    float: left;
+    border-bottom: 1px dashed #e5e5e5;
+    border-right: 1px dashed #e5e5e5;
+    position: relative;
+    text-align: center;
+    width: 189px;
+    height: 93px;
+    overflow: hidden;
+}
+
+.rebrandlist li h6 {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .2);
+    display: none;
+}
+
+.rebrandlist li .addfav{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background: url(../images/module/icon/hdicon.png) no-repeat 0 -60px;
+    width: 10px;
+    height: 9px;
+    display: none;
+}
+
+.rebrandlist li.active .addfav {
+    display: block;
+}
+
+.rtabbrand {
+    width: 760px;
+    padding-top: 1px;
+    overflow: hidden;
+    float: left;
+}
+
+.rtabsad {
+    float: right;
+    width: 220px;
+}
+
+.rtabsad li {
+    border-bottom: 1px dashed #e5e5e5;
+}
+
+.rtabplatform {
+    float: left;
+    width: 980px;
+    overflow: hidden;
+}
+
+.mleft {
+    float: left;
+    width: 220px;
+}
+
+.ifast h2 {
+    width: 220px;
+    height: 100px;
+    background: url(../images/index/title.png) no-repeat 0 -240px;
+}
+
+.ifast h2 a {
+    display: block;
+    width: 220px;
+    height: 100px;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.inav dt {
+    margin-top: 22px;
+    font-size: 16px;
+    padding-left: 20px;
+    font-weight: 700;
+}
+
+.inav dd {
+    padding: 4px 0 8px 20px;
+    border-bottom: 1px dashed #eaeaea;
+}
+
+.inav dd:last-child {
+    border-bottom: 0 none;
+}
+
+.inav dd li {
+    float: left;
+    width: 50%;
+    height: 20px;
+    overflow: hidden;
+    line-height: 20px;
+}
+
+.inav dd li a {
+    color: #666;
+}
+
+.inav dd li a:hover {
+    color: #ff9000;
+}
+
+.mcenter {
+    float: left;
+    width: 538px;
+    overflow: hidden;
+}
+
+.mrepro {
+    width: 538px;
+    overflow: hidden;
+}
+
+.reporlist {
+    width: 105%;
+}
+
+.reporlist li {
+    float: left;
+    width: 159px;
+    height: 160px;
+    margin-top: -1px;
+    border-top: 1px dashed #e5e5e5;
+    border-left: 1px dashed #e5e5e5;
+    padding: 10px;
+    position: relative;
+}
+
+.reporlist li h6 {
+    padding-right: 20px;
+    height: 30px;
+    line-height: 15px;
+    overflow: hidden;
+}
+
+.reporlist li .pic {
+    text-align: right;
+    /*width: 159px;*/
+    margin-left: 40px;
+    overflow: hidden;
+    height: 125px;
+}
+
+.reporlist li .pic img {
+    width: 120px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    display: block;
+    float: right;
+}
+
+.reporlist li:hover img {
+    margin-right: 5px;
+}
+
+.reporlist li .price {
+    position: absolute;
+    left: 10px;
+    top: 45px;
+}
+
+.reporlist li .newprice {
+    display: block;
+    color: #f06129;
+}
+
+.reporlist li .newprice em {
+    color: #666;
+    font-size: 12px;
+    display: block;
+}
+
+.reporlist li .newprice strong {
+    font-size: 16px;
+    font-family: Arial;
+}
+
+.reporlist li .oldprice {
+    color: #999;
+    font-family: Arial;
+    display: none;
+}
+
+.reporlist li .no {
+    position: absolute;
+    width: 27px;
+    height: 22px;
+    background: url(../images/index/colck.png) 0 1px no-repeat;
+    color: #fff;
+    text-align: center;
+    padding-right: 2px;
+    padding-top: 10px;
+    line-height: 20px;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    right: 2px;
+    top: -2px;
+}
+
+.mright {
+    float: right;
+    width: 442px;
+}
+
+.mradlist li {
+    float: left;
+    width: 220px;
+    margin-top: -1px;
+    border-left: 1px dashed #e5e5e5;
+    border-top: 1px dashed #e5e5e5;
+    overflow: hidden;
+}
+
+.mradlist li img {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.mradlist li:hover img {
+    margin-left: -5px;
+}
+
+.mainbox {
+    margin-bottom: 30px;
+}
+
+.maincon {
+    background-color: #fff;
+}
+
+.mtitle {
+    height: 36px;
+    clear: both;
+}
+
+.mtitle .more {
+    float: right;
+    padding-right: 12px;
+    background: url(../images/module/icon/hdicon.png) no-repeat right 5px;
+    margin-top: 5px;
+}
+
+.mtitle h2 {
+    height: 36px;
+    background: url(../images/index/title.png) no-repeat 0 -45px;
+}
+
+.mtitle h2 a {
+    display: block;
+    height: 36px;
+    width: 200px;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.mtitle h2.mt2 {
+    background-position: 0 -100px;
+}
+
+.mtitle h2.mt3 {
+    background-position: 0 -150px;
+}
+
+.mainbot {
+    clear: both;
+    margin-bottom: 30px;
+}
+
+.mtabt {
+    height: 35px;
+    border-bottom: 2px solid #fc5f00;
+}
+
+.mtabt h3 {
+    float: left;
+    width: 220px;
+    height: 35px;
+    background: url(../images/index/title.png) no-repeat 0 -195px;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+.mtabt ul {
+    float: left;
+    height: 35px;
+}
+
+.mtabt ul li {
+    float: left;
+    padding: 0 20px;
+}
+
+.mtabt ul li a {
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+}
+
+.mtabt ul li.on a {
+    color: #fc5f00;
+    background: url(../images/module/icon/arrow.png) no-repeat center bottom;
+}
+
+.mtabcon {
+    background-color: #fff;
+}
+
+.mbleft {
+    float: left;
+    width: 220px;
+    height: 460px;
+    overflow: hidden;
+}
+
+.vmore {
+    padding-left: 20px;
+}
+
+.vmore a {
+    padding-right: 12px;
+    background: url(../images/module/icon/hdicon.png) no-repeat right 5px;
+    display: inline-block;
+}
+
+.plist li {
+    float: left;
+    border-left: 1px dashed #e5e5e5;
+    border-top: 1px dashed #e5e5e5;
+    height: 219px;
+    width: 179px;
+    text-align: center;
+    overflow: hidden;
+    padding: 5px;
+    margin-top: -1px;
+}
+
+.plist li .pic {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.plist li .pic img {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.plist li .pic:hover img {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.1);
+}
+
+.plist li h6 {
+    line-height: 15px;
+    height: 15px;
+    overflow: hidden;
+    margin:15px 0 5px 0;
+}
+
+.plist li .newprice {
+    color: #f06129;
+}
+
+.plist li .newprice strong {
+    font-size: 16px;
+}
+
+.plist li .newprice em {
+    color: #666;
+}
+
+.plist li .oldprice {
+    display: none;
+}
+
+.mbright {
+    border-left: 1px dashed #e5e5e5;
+    width: 219px;
+    height: 460px;
+    overflow: hidden;
+    float: right;
+}
+
+.reporlist li .pic a {
+    width: 120px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: visible;
+    display: block;
+    height: 120px;
+}
+
+.reporlist li .pic a .img-inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+}
+
+.reporlist li .pic a .img-inner img {
+    width: auto !important;
+    height: auto !important;
+    max-width: 120px;
+    max-height: 120px;
+}
+
+/* hot */
+.mbcenter {
+    float: left;
+    width: 760px;
+    overflow: hidden;
+}
+
+.mbcenter .plist li .pic {
+    width: 150px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: visible;
+    display: block;
+}
+
+.mbcenter .plist li .img-inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.mbcenter .plist li .img-inner img {
+    width: auto !important;
+    height: auto !important;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.reporlist li .pic a,
+.mbcenter .pic {
+    *position: relative;
+}
+
+.reporlist li .pic a .img-inner,
+.mbcenter .pic .img-inner {
+    *width: auto;
+    *height: auto;
+    *overflow: visible !important;
+    *position: absolute;
+    *left: 50%;
+    *top: 50%;
+    *background: none;
+    *border: none;
+}
+
+.reporlist li .pic a .img-inner img,
+.mbcenter .pic .img-inner img {
+    *position: relative;
+    *left: -50%;
+    *top: -50%;
+}

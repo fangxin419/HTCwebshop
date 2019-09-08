@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+    <meta property='wb:webmaster' content='be83b573577c50a1' />
+    <title>用户登录 - 海淘网站|海淘攻略|海淘教程|海外代购|海购|美国亚马逊</title>
+    <meta name='description'
+        content='海淘橙是中国权威的海淘网站，给广大海淘用户提供方便、快捷、有保障的海淘商品，并汇集各种海淘攻略，分享优质海淘教程。购买美国亚马逊、6PM等海淘商品，尽在海淘橙！' />
+    <meta name='keywords' content='海淘,海淘网,海淘攻略,海淘网站,海淘教程,海外代购,海购,美国亚马逊' />
+    <link type='text/css' href='css/global.css?v=v1.0' rel='Stylesheet' />
+    <link type='text/css' href='css/reg.css?v=v1.0' rel='Stylesheet' />
+    <!--[if lt IE 9]><script src=http://img.haitaocheng.com/v4.0/js/html5.js></script><![endif]-->
+    <script type='text/javascript' src='js/htc.portal-1.8.3.min.js?v=v1.0'></script>
+    <script type='text/javascript' src='js/common.js?v=v1.0'></script>
+    <script type='text/javascript' src='js/layer.min.js?v=v1.0'></script>
+    <script type='text/javascript' src='js/jquery.SuperSlide.js?v=v1.0'></script>
+    <script type='text/javascript' src='js/jquery.placeholder.js?v=v1.0'></script>
+    <script type='text/javascript' src='js/login.js?v=v1.0'></script>
+    <script>
+        needCheckCode = 'False' == 'True';
+        var returnUrl = 'http://www.haitaocheng.com';
+    </script>
+</head>
+
+<body>
+
+
+
+
+    <link type='text/css' href='css/passport.css?v=5' rel='Stylesheet' />
+    <div class="m-p-header">
+        <div class="m-p-header-wrap clearfix">
+            <div class="m-p-logo">
+                <a href="http://www.haitaocheng.com/" target="_blank" rel="nofollow">
+                    <h1>海淘橙</h1>
+                </a>
+                <div class="m-p-slogo"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--S m-p-main-->
+    <div class="m-p-main m-p-login-content">
+        <div class="m-p-recommand-box">
+            <!--mod_fbanner-->
+            <div style="width:548px;overflow:hidden;margin:0 auto 1px;zoom:1;">
+                <a href="#">
+                    <span style="float:left;">
+                        <img src="http://image.haitaocheng.com/ImageNewsInfo/2017/07/19/201707190944049625.jpg"
+                            alt='登陆页广告' />
+                    </span>
+                </a>
+            </div>
+        </div>
+        <!--E m-p-recommand-box-->
+
+        <div class="m-p-login-box">
+            <div class="m-p-login-t clearfix">
+                <div class="p-title">会员登录</div>
+                <div class="p-other">
+                    您还不是海淘橙会员？
+                    <a href="/Register.aspx?ref=http://member.haitaocheng.com/index.aspx" class="p-other-link">
+                        <span>立即注册</span>
+                    </a>
+                </div>
+            </div>
+            <!--E m-p-login-t-->
+
+            <div class="m-p-passport-box">
+                <div class="p-passport-box">
+                    <div class="m-err-msg hide">
+                        <p>
+                            <i class="m-ui-ico m-ui-ico-16"></i>
+                            <span id="tip"></span>
+                        </p>
+                    </div>
+                    <div class="p-passport-login">
+                        <div class="p-txtbox">
+                            <!-- focus -->
+                            <i class="icon-email"></i>
+                            <input class="txt-input txt-email ltxt" type="text" name="loginName" maxlength="40"
+                                id="loginName" value='' placeholder="您的邮箱或手机号" autocomplete="off" />
+                            <ul class="emaillist"></ul>
+                        </div>
+                        <div class="p-txtbox">
+                            <i class="icon-password"></i>
+                            <input class="txt-input txt-password ltxt" type="password" name="loginPass" id="loginPass"
+                                placeholder="您的密码" maxlength="30" />
+                        </div>
+                        <div class="p-txtcode clearfix" style="display: none;">
+                            <!--add txtcode-txtbox-error-->
+                            <div class="txtcode-txtbox txtcode-txtbox-error ">
+                                <i class="icon-code"></i>
+                                <input type="text" class="txt-input" autocomplete="off" placeholder="请确认验证码"
+                                    maxlength="4" value="" id="txtCode" />
+
+                            </div>
+                            <div class="txtcode-num">
+                                <!-- <img src="Common/ValidateCode.aspx?c=VCode" alt="" id="imgcode" onclick="getCode();" /> -->
+                            </div>
+                            <div class="txtcode-link">
+                                看不清
+                                <a href="javascript:void(0);" onclick="getCode();">换一张</a>
+                            </div>
+                        </div>
+                        <!--E p-txtcode-->
+                        <div class="p-auto clearfix">
+                            <label class="p-auto-label">
+                                <input type="checkbox" name="r_userName" id="r_userName" checked="checked" />
+                                <span>记住账号</span>
+                            </label>
+                            <span class="p-auto-forget">
+                                <a title="忘记密码?" style="cursor: pointer;" id="forgetPassword">忘记密码？</a>
+                            </span>
+                        </div>
+                        <div class="p-login-btn">
+                            <a href="javascript:void(0);" class="login-btn-submit" id="sub_form">立即登录</a>
+                        </div>
+
+                        <div class="p-otherlogin">使用合作网站账号登录
+                            <a class="qqlink" href="#"
+                                title="QQ快捷登录"></a>
+                            <a class="wblink" href="#"
+                                title="新浪快捷登录"></a>
+                            <a class="zfblink" href="#" title="支付宝快捷登录"></a>
+                        </div>
+                        <!---->
+
+                    </div>
+                    <!--E p-passport-login-->
+                </div>
+                <!--E p-passport-box-->
+
+
+
+            </div>
+
+        </div>
+        <!--E m-p-login-box-->
+    </div>
+
+
+
+
+    <div class="sft m-p-footer">
+        <p>Copyright ©2012-2016 海淘橙 haitaocheng.com. All Rights Reserved.粤ICP备14073754号-1</p>
+    </div>
+    <!-- <div style="display:none;">
+        <script src="js/g/tongji.js"></script>
+    </div> -->
+
+</body>
+
+</html>

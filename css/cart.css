@@ -1,0 +1,108 @@
+a {
+    -moz-user-select: none;
+    /*火狐*/
+    -webkit-user-select: none;
+    /*webkit浏览器*/
+    -ms-user-select: none;
+    /*IE10*/
+    -khtml-user-select: none;
+    /*早期浏览器*/
+    user-select: none;
+}
+
+a:hover {
+    color: #ff9000;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cartmain {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.cartmain2 {
+    font-size: 15px;
+    width: 1000px;
+    margin: 30px auto;
+    min-height: 300px;
+}
+
+.cartmain2 img {
+    width: 100px;
+    height: 50px;
+}
+
+.cartmain2 th {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.cartmain2 td {
+    text-align: center;
+    height: 60px;
+}
+
+.cartmain2 .remove {
+    cursor: pointer;
+}
+
+.numselect {
+    height: 30px;
+    width: 130px;
+    margin: 0 auto;
+}
+
+.numselect .minNum,
+.numselect .numtxt,
+.numselect .maxNum {
+    float: left;
+    height: 30px;
+    margin-right: -1px;
+    border: 1px solid #bfbfbf;
+    text-align: center;
+    padding: 0 10px;
+    font: 15px/30px "simsun";
+}
+
+.numselect .numtxt {
+    width: 66px;
+    font-family: Arial;
+}
+
+.cart-mod-wrapper {
+    width: 1200px;
+}
+
+.cart-mod-wrapper,
+.cartmain {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.nogoods {
+    color: #626262;
+    background-color: #e4e4e4;
+    padding: 1px 3px;
+    margin-right: 2px;
+    margin-left: 2px;
+    white-space: nowrap;
+}
+
+.nogoods {
+    width: 600px;
+    margin: 100px auto;
+    background: url(../images/c/nogoods_bg.png) no-repeat 55px 5px;
+}
+
+.nogoods p {
+    width: 265px;
+    text-align: left;
+    font-size: 14px;
+    padding: 86px 0 140px 303px;
+}
+
+.nogoods p a {
+    margin: 0 5px;
+    color: #28567e;
+}

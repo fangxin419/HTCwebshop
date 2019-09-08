@@ -1,0 +1,261 @@
+<!DOCTYPE HTML
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <title>我的购物车-海淘橙</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="data/libs/bootstrap.css">
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+    <!-- <link rel="stylesheet" href="css/c/cart.css" /> -->
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="topbar">
+            <div class="area topbarcon">
+                <ul class="navbox">
+                    <li class="item ucenter"><a rel="Nofollow" href="#">我的海淘</a>
+                        <ul>
+                            <li><a rel="Nofollow" href="#">我的订单</a></li>
+                            <li><a rel="Nofollow" href="#">我的账户</a></li>
+
+                            <li><a rel="Nofollow" href="#">我的消息</a></li>
+                            <li><a rel="Nofollow" href="#">我的优惠券</a></li>
+                        </ul>
+                    </li>
+                    <li class="item cart"><a rel="Nofollow" href="cart.html">购物车
+                            <strong>0</strong> 件</a></li>
+                    <li class="item order"><a rel="Nofollow" href="#">订阅关注</a>
+                        <div class="ordernav">
+                            <div class="ordernav" style="display: none;">
+                                <div class="orderewm">
+                                    <div class="ewmcon">
+                                        <img src="images/help/ewm1.png" height="80" width="80" alt="">
+                                        <h5>微信订阅号</h5>
+                                    </div>
+                                    <div class="ewmcon">
+                                        <img src="images/help/ewm2.png" height="80" width="80" alt="">
+                                        <h5>微信企业号</h5>
+                                    </div>
+                                </div>
+                                <div class="orderatt">
+                                    <h5>关注我们</h5>
+                                    <div class="attshare">
+                                        <a href="#"></a>
+
+                                        <a href="#"></a>
+
+                                    </div>
+                                    <h5>邮件订阅</h5>
+                                    <div class="feed">
+                                        <input type="text" class="ftxt" id="txtTopEmail" placeholder="请输入您的邮箱地址">
+                                        <input type="button" value="订阅" class="fbtn" id="btnTopAddEmail">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="item helpcenter"><a rel="Nofollow" href="#">帮助中心</a></li>
+                    <li class="item sitemap"><a href="#">网站导航</a>
+                        <div class="sitemapnav">
+
+                        </div>
+                    </li>
+                </ul>
+                <div id="userinfo">
+                </div>
+            </div>
+        </div>
+        <div class="hdwraper">
+            <div id="top" class="area cart-mod-wrapper">
+                <h1 id="logo"><a href="http://localhost/haitaocheng/index.html"><img src="images/logo.png" height="78"
+                            width="198" alt=""></a></h1>
+            </div>
+    </header>
+
+    <div class="cartmain">
+        <div class="nogoods">
+            <p>您的购物车还没有宝贝，赶紧行动吧！<br />请移步到<a href="http://localhost/haitaocheng/index.html">随便逛逛</a>看看其他分享的宝贝。</p>
+        </div>
+    </div>
+
+    <div class="cartmain2">
+        <table class="col-7 table table-bordered thead-inverse text-center">
+            <thead>
+                <tr>
+                    <th>选择商品</th>
+                    <th>商品样式</th>
+                    <th>名称</th>
+                    <th>单价</th>
+                    <th>数量</th>
+                    <th>价格</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <tr>
+                            <td><input type="checkbox" name="cb" /></td>
+                            <td>${}</td>
+                            <td>${}</td>
+                            <td>${}</td>
+                            <td><input type="number" value="${}" class="num" min=1></td>
+                            <td></td>
+                            <td>删除</td>
+                        </tr> -->
+            </tbody>
+            <tfoot>
+                <th><input type="checkbox" class="qx" /></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th class="num"><span></span></th>
+                <th class="price"></th>
+                <th class="remove">清空购物车</th>
+            </tfoot>
+        </table>
+    </div>
+
+    <footer id="footer">
+        <div class="botslogan">
+            <div class="botslogancon">
+                <img src="images/module/bot_slogan.png" height="96" width="950" alt="">
+            </div>
+        </div>
+        <div class="area ft">
+            <div class="botbox cl">
+                <div class="botnav">
+                    <dl class="bn1">
+                        <dt>
+                            <a href="#">海淘橙</a>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#">关于我们</a></li>
+                                <li><a href="#">免责声明</a></li>
+                                <li><a href="#">联系我们</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="bn2">
+                        <dt>
+                            能做什么
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#">意见/建议</a></li>
+                                <li><a href="#">海淘购物</a></li>
+                                <li><a href="#">友情链接</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="bn3">
+                        <dt>
+                            <a href="#">帮助中心</a>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#">新手指南</a></li>
+                                <li><a href="#">常见问题</a></li>
+                                <li><a href="#">正品保证</a></li>
+                                <li><a href="#">物流配送</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="bn4">
+                        <dt>
+                            <a href="#">资讯频道</a>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#">海淘资讯</a></li>
+                                <li><a href="#">网站公告</a></li>
+                                <li><a href="#">网站地图</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="botewm">
+                    <ul class="cl">
+                        <li>
+                            <h5>微信订阅号</h5>
+                            <p>扫一扫有惊喜</p>
+                            <div class="ewmpic">
+                                <img src="images/help/ewm1.png" height="80" width="80" alt="">
+                                <span class="bigewm"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <h5>微信服务号</h5>
+                            <p>扫一扫有惊喜</p>
+                            <div class="ewmpic">
+                                <img src="images/help/ewm2.png" height="80" width="80" alt="">
+                                <span class="bigewm"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="attus">
+                    <h5>关注我们</h5>
+                    <ul class="attshare">
+                        <li><a href="#"></a>
+                        </li>
+
+                        <li><a href="#"></a></li>
+
+                    </ul>
+                    <h5>邮件订阅</h5>
+                    <div class="feed" id="div_feed">
+                        <input type="text" id="txtEmail" class="ftxt" placeholder="请输入您的邮箱地址，订阅最新优惠">
+                        <input type="button" id="btnAddEmail" value="订阅" class="fbtn">
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>
+                    Copyright 2012-2016 海淘橙 haitaocheng.com. All Rights Reserved.
+                    <a ref="nofollow" href="#">粤ICP备14073754号-1</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script src="js/htc.portal-1.8.3.min.js"></script> -->
+    <script src="data/libs/jquery.slim.js"></script>
+    <script src="data/libs/popper.js"></script>
+    <script src="data/libs/bootstrap.js"></script>
+    <!-- <script src="js/ajax+jsonp.js"></script> -->
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/js2.0/cart.js"></script>
+    <script src="js/header.js"></script>
+    <!-- <script src="js/jquery.lazyload.min.js"></script>
+    <script src="js/layer.min.js"></script>
+
+    <script src="js/jquery.placeholder.js"></script>
+    <script src="js/jquery.SuperSlide.js"></script>
+    
+    <script src="js/base.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/jquery.autocomplete.min.js"></script>
+    <script src="js/g/jquery.counter.js"></script>
+    <script src="js/g/jquery.selection.js"></script>
+    <script src="js/c/index.js"></script>
+    <script src="js/g/common.js"></script>
+    <script src="js/c/quicklogin.js"></script>
+
+    <script type="text/javascript" src="js/c/page_cart.js"></script> -->
+
+</body>
+
+</html>
