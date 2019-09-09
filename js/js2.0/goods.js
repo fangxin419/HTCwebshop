@@ -17,7 +17,7 @@
         },
         getGood: function () {
             let t = false;
-            for (let i = 1; i < details.res.length; i++) {
+            for (let i = 0; i < details.res.length; i++) {
                 if (details.goodId == details.res[i].goodsId) {
                     details.res = details.res[i];
                     t = true;
@@ -34,6 +34,7 @@
         display: function () {
             $('title').html(details.res.name);
             $('.bigpic').html(`<img src="${details.res.url}"/>`);
+            $('.photoglass').html(`<img src="${details.res.url}" class="lookphoto" />`);
             $('.goodN').eq(0).html(`<span>${details.res.name}</span>`);
             $('.goodN').eq(1).html(`<a href="#">${details.res.name}</a>`);
             $('.nprice').html(`<em>￥${details.res.price}</em>`);

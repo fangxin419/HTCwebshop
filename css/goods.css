@@ -1,15 +1,3 @@
-a {
-    -moz-user-select: none;
-    /*火狐*/
-    -webkit-user-select: none;
-    /*webkit浏览器*/
-    -ms-user-select: none;
-    /*IE10*/
-    -khtml-user-select: none;
-    /*早期浏览器*/
-    user-select: none;
-}
-
 .location {
     height: 35px;
     line-height: 35px;
@@ -34,19 +22,54 @@ a {
     float: left;
     border: 1px solid #bfbfbf;
     background-color: #fff;
-    height: 448px;
-    width: 448px;
+    height: 440px;
+    width: 440px;
+    position: relative;
 }
 
 .photoshow .bigpic {
-    width: 300px;
-    height: 300px;
-    margin: 75px auto;
+    width: 90%;
+    height: 90%;
+    margin: 20px;
 }
 
 .photoshow .bigpic img {
     width: 100%;
     height: 100%;
+}
+
+.photoshow .move {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    width: 200px;
+    height: 200px;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    opacity: 0.4;
+    margin: 0;
+}
+
+.photoglass {
+    display: none;
+    z-index: 99;
+    overflow: hidden;
+    border: 1px solid #bfbfbf;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    position: absolute;
+    height: 440px;
+    width: 440px;
+}
+
+.photoglass .lookphoto {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 880px;
+    height: 880px;
 }
 
 .protopinfo {
@@ -90,19 +113,6 @@ a {
     margin-bottom: 10px;
 }
 
-.protinfo dd .moreclose,
-.protinfo dd .moreopen {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding-right: 15px;
-    background: url(../images/product/detail_trangle.png) no-repeat right 5px;
-}
-
-.protinfo dd .moreopen {
-    background-position: right -11px;
-}
-
 .protdl2 dd {
     margin-top: -30px;
 }
@@ -114,17 +124,6 @@ a {
 .protinfo .nprice {
     font: bold 26px/1.5 Arial;
     color: #ff9000;
-}
-
-.protinfo .colorselect li,
-.protinfo .sizeselect li {
-    float: left;
-    margin-right: 8px;
-    margin-bottom: 4px;
-}
-
-.protinfo .colorselect .active {
-    outline: 1px solid #000;
 }
 
 .protinfo .numselect {
@@ -150,23 +149,6 @@ a {
 .protinfo .numselect .numtxt {
     width: 35px;
     font-family: Arial;
-}
-
-.buyproinfotip {
-    height: 30px;
-    padding-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-    padding-right: 200px;
-}
-
-.buyproinfotip .comtip {
-    color: #58ae39;
-    font-size: 16px;
-}
-
-.buyproinfotip .errortip {
-    color: #f00;
 }
 
 .buyop {
@@ -268,28 +250,4 @@ a {
 
 .proslogan {
     padding: 20px;
-}
-
-.prointro {
-    padding: 25px;
-    line-height: 1.8;
-    overflow: hidden;
-}
-
-.prointro p img {
-    display: block;
-    margin: auto;
-}
-
-.protinfo .props {
-    position: relative;
-    padding-top: 1px;
-    padding-right: 50px;
-    max-height: 72px;
-    overflow: hidden;
-}
-
-.protinfo .moreclose {
-    cursor: pointer;
-    display: none;
 }
