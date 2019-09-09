@@ -100,24 +100,63 @@
 
 .log-reg-nav ul li a {
     position: relative;
-    color:#f60;
+    color: #000;
     font: 20px/2.5 "";
     width: 100%;
     text-align: center;
     display: block;
 }
 
+.log-reg-nav ul li a.active {
+    color: #f60;
+}
+
 .log-reg-nav ul li a.active:after {
     content: "";
-    display:block;
+    display: block;
     position: absolute;
-    width:160px;
-    height:3px;
-    background:#f60;
-    left:0;
-    right:0;
-    bottom:0;
-    margin:0 auto;
+    width: 160px;
+    height: 3px;
+    background: #f60;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+.m-err-msg {
+    height: 18px;
+    padding: 10px;
+    background: #fff0f0;
+    border: 1px solid #f55;
+    margin-top: 10px;
+}
+
+.m-err-msg.hide {
+    visibility: hidden;
+    display: block;
+}
+
+.m-err-msg p {
+    margin-left: 20px;
+    position: relative;
+}
+
+.m-err-msg p i {
+    position: absolute;
+    left: -20px;
+    top: 2px;
+}
+
+.m-ui-ico {
+    display: inline-block;
+    background: url(../images/module/tipIcon.png);
+}
+
+.m-ui-ico-16 {
+    width: 16px;
+    height: 16px;
+    background-position: -155px -210px;
 }
 
 .p-passport-box {
@@ -157,12 +196,13 @@
     background-position: 2px -21px;
 }
 
-.p-login-btn {
+.p-logreg-btn {
     width: 100%;
     margin-top: 10px;
 }
 
-.login-btn-submit {
+.log-btn,
+.reg-btn {
     padding: 14px 0;
     height: 20px;
     line-height: 20px;
@@ -175,7 +215,7 @@
     display: block;
 }
 
-.p-login-btn a:hover {
+.p-logreg-btn a:hover {
     text-decoration: none;
     color: #fff;
     background-color: #f8b500;

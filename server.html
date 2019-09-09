@@ -37,9 +37,9 @@
             <div class="m-p-login-t clearfix">
                 <div class="p-title">会员登录</div>
                 <div class="p-other">
-                    您还不是海淘橙会员？
-                    <a href="register.html" class="p-other-link">
-                        <span>立即注册</span>
+                    <i class="p-other-i">您还不是海淘橙会员？</i>
+                    <a class="p-other-link">
+                        <span class="go-reglog">立即注册</span>
                     </a>
                 </div>
             </div>
@@ -47,8 +47,8 @@
             <div class="log-reg-box">
                 <div class="log-reg-nav">
                     <ul>
-                        <li><a href="" class="nav-log active">登录</a></li>
-                        <li><a href="" class="nav-reg">注册</a></li>
+                        <li><a class="nav-log active">登录</a></li>
+                        <li><a class="nav-reg">注册</a></li>
                     </ul>
                 </div>
                 <div class="p-passport-box">
@@ -56,14 +56,13 @@
                         <div class="p-txtbox">
                             <i class="icon-name"></i>
                             <input class="name-l" type="text" maxlength="40" placeholder="请输入您的用户名" />
-                            <ul class="namelist"></ul>
                         </div>
                         <div class="p-txtbox">
                             <i class="icon-password"></i>
                             <input class="pass-l" type="password" placeholder="请输入您的密码" maxlength="30" />
                         </div>
-                        <div class="p-login-btn">
-                            <a href="" class="login-btn-submit" id="sub_form">立即登录</a>
+                        <div class="p-logreg-btn">
+                            <a class="log-btn">立即登录</a>
                         </div>
                     </div>
 
@@ -71,19 +70,25 @@
                         <div class="p-txtbox">
                             <i class="icon-name"></i>
                             <input class="name-r" type="text" maxlength="40" placeholder="请设置您的用户名">
-                            <ul class="namelist"></ul>
                         </div>
                         <div class="p-txtbox">
                             <i class="icon-password"></i>
-                            <input class="pass-r" type="password" placeholder="请设置您的密码" maxlength="30" />
+                            <input class="pass1-r" placeholder="请设置您的密码" maxlength="30" />
                         </div>
                         <div class="p-txtbox">
                             <i class="icon-password"></i>
-                            <input class="pass-r2" type="password" placeholder="请确认您的密码" maxlength="30" />
+                            <input class="pass2-r" placeholder="请确认您的密码" maxlength="30" />
                         </div>
-                        <div class="p-login-btn">
-                            <a href="" class="login-btn-submit" id="sub_form">立即注册</a>
+                        <div class="p-logreg-btn">
+                            <a class="reg-btn">立即注册</a>
                         </div>
+                    </div>
+
+                    <div class="m-err-msg hide">
+                        <p>
+                            <i class="m-ui-ico m-ui-ico-16"></i>
+                            <span class="info"></span>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -93,6 +98,8 @@
     <div class="sft m-p-footer">
         <p>Copyright ©2012-2016 海淘橙 haitaocheng.com. All Rights Reserved.粤ICP备14073754号-1</p>
     </div>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/js2.0/server.js"></script>
 </body>
 
 </html>

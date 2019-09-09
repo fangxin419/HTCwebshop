@@ -132,6 +132,7 @@ body {
 }
 
 a {
+    cursor: pointer;
     text-decoration: none;
     color: #333;
     -moz-user-select: none;
