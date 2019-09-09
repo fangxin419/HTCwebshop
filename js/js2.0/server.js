@@ -8,7 +8,7 @@
         init: function () {
             server.status = document.location.href.split('?')[1];
             server.status = server.status || 0;
-            server.info = $.cookie("info") ? $.cookie("info") : [];
+            server.info = $.cookie("info") ? JSON.parse($.cookie("info")) : [];
             server.error = '';
             server.off = false;
             server.state();
@@ -56,17 +56,11 @@
                 server.status = (server.status + 1) % 2;
                 server.state();
             });
-            $('.name-l').blur(function () {
-                // if($(this).val()){
-
-                // }
-            });
-            $('.pass-l').blur(function () {
-
-            });
             $('.name-r').blur(function () {
                 server.off = true;
+                server.hideError();
                 for (let i = 0; i < server.info.length; i++) {
+                    console.log($(this).val()==server.info[i].name);
                     if ($(this).val() == server.info[i].name) {
                         server.error = '该用户名已存在!';
                         server.showError();
@@ -77,6 +71,7 @@
             });
             $('.pass1-r').blur(function () {
                 server.off = true;
+                server.hideError();
                 if ($(this).val().length < 8 || $(this).val().length > 20) {
                     server.error = '密码不符合,密码长度为8-20位!';
                     server.showError();
@@ -85,6 +80,7 @@
             });
             $('.pass2-r').blur(function () {
                 server.off = true;
+                server.hideError();
                 if ($('.pass1-r').val() != '' && $(this).val() != $('.pass1-r').val()) {
                     server.error = '两次密码不一致,请重新设置!';
                     server.showError();
@@ -94,18 +90,23 @@
             $('.log-btn').on('click', function () {
                 let name = $('.name-l').val();
                 let pass = $('.pass-l').val();
+                let logoff = false;
                 for (let i = 0; i < server.info.length; i++) {
-                    if (name == server.info[i] && pass == server.info[i]) {
+                    if (name == server.info[i].name && pass == server.info[i].pass) {
+                        logoff = true;
                         server.info[i].s == 1;
                         window.location = "http://localhost/haitaocheng/index.html";
                         break;
                     }
                 }
-                server.error = '请输入正确的用户名或密码!';
-                server.showError();
+                if (!logoff) {
+                    server.error = '请输入正确的用户名或密码!';
+                    server.showError();
+                }
             });
             $('.reg-btn').on('click', function () {
                 server.hideError();
+                console.log(server.info);
                 let name = $('.name-r').val();
                 let pass = $('.pass1-r').val();
                 for (let i = 0; i < server.info.length; i++) {
