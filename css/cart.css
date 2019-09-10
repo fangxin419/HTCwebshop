@@ -60,13 +60,29 @@ a:hover {
     height: 100px;
 }
 
+.cartmain2 .delete {
+    cursor: pointer;
+    display: block;
+    width: 80px;
+    height: 40px;
+    border-radius: 25px;
+    background: #bbb;
+    font: 16px/40px "";
+    margin: auto;
+}
+
+.cartmain2 .delete:hover {
+    background: #f90;
+    color: #fff;
+}
+
 .cartmain2 .remove {
     cursor: pointer;
 }
 
-.cartmain2 .qx{
-    width:16px;
-    height:16px;
+.cartmain2 .qx {
+    width: 16px;
+    height: 16px;
 }
 
 .numselect {

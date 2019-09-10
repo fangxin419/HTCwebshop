@@ -33,6 +33,7 @@
                 } else {
                     alert('加入购物车成功!');
                     shop.setCookie();
+                    location.reload();
                 }
             });
         },

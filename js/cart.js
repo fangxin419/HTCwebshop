@@ -46,7 +46,7 @@
                                         </div>
                                     </td>
                                     <td><i>￥</i><span>${this.res[i].price * this.goods[j].num}</span></td>
-                                    <td class="delete">删除</td>
+                                    <td><i class="delete">删除</i></td>
                                 </tr>`
                     }
                 }
@@ -85,17 +85,20 @@
                 let e = eve || window.event;
                 let tar = e.target || e.srcElement;
                 if (tar.className == "delete") {
-                    this.id = tar.parentNode.getAttribute("index");
-                    tar.parentNode.remove();
-                    this.setCookie((i) => {
-                        this.goods.splice(i, 1);
-                        this.setNum();
-                        this.setMoney();
-                        if (this.goods.length < 1) {
-                            $('.cartmain2').hide();
-                            $('.cartmain').show();
-                        }
-                    });
+                    let t = confirm("确认删除该商品??");
+                    if (t) {
+                        this.id = tar.parentNode.parentNode.getAttribute("index");
+                        tar.parentNode.parentNode.remove();
+                        this.setCookie((i) => {
+                            this.goods.splice(i, 1);
+                            this.setNum();
+                            this.setMoney();
+                            if (this.goods.length < 1) {
+                                $('.cartmain2').hide();
+                                $('.cartmain').show();
+                            }
+                        });
+                    }
                 }
                 //复选框选中算价格
                 if (tar.className == 'cb') {

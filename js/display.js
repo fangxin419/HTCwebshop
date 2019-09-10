@@ -25,6 +25,14 @@
             goods.gbox2.eq(3).html(goods.display2(25, 2));
             goods.gbox2.eq(4).html(goods.display2(27, 2));
             goods.gbox2.eq(5).html(goods.display2(29, 2));
+
+            let allimg = $('[data-src]');
+            goods.arr = Array.from(allimg);
+            console.log(allimg);
+            onscroll = function () {
+                goods.lazyload();
+            }
+            goods.lazyload();
         },
         display1: function (min, num) {
             let str = '';
@@ -34,7 +42,7 @@
                                 <h6>${goods.res[i].name}</h6>
                                 <div class="pic">
                                     <span class="img-inner">
-                                        <img src="${goods.res[i].url}" height="120" width="120">
+                                    <img style="background:url(http://localhost/haitaocheng/images/lazy_loading.gif) no-repeat center" data-src="${goods.res[i].url}" height="120" width="120">
                                     </span>
                                 </div>
                                 <div class="price">
@@ -52,13 +60,22 @@
             for (let i = min - 1; i < min + num - 1; i++) {
                 str += `<li>
                             <a href="http://localhost/haitaocheng/goods.html?${goods.res[i].goodsId}" target="_blank" >
-                                <img src="${goods.res[i].url}" height="150" width="150">
+                            <img style="background:url(http://localhost/haitaocheng/images/lazy_loading.gif) no-repeat center" data-src="${goods.res[i].url}" height="150" width="150">
                                 <h6>${goods.res[i].name}</h6>
                                 <p><span class="newprice"><em>海淘价：</em>￥<strong>${goods.res[i].price}</strong></span></p>
                             </a>
                         </li>`;
             }
             return str;
+        },
+        lazyload: function () {
+            for (let i = 0; i < goods.arr.length; i++) {
+                if ($('html').scrollTop() > $(goods.arr[i]).offset().top - $(window).height()) {
+                    goods.arr[i].src = $(goods.arr[i]).attr("data-src");
+                    goods.arr.splice(i, 1);
+                    i--;
+                }
+            }
         }
     }
     goods.init();
