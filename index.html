@@ -20,144 +20,74 @@
 <body id='index'>
     <header id="header">
         <div class="topbar">
-            <div class="area topbarcon">
-                <ul class="navbox">
-                    <li class="item ucenter"><a >我的海淘</a>
-                        <ul>
-                            <li><a >我的订单</a></li>
-                            <li><a >我的账户</a></li>
-
-                            <li><a >我的消息</a></li>
-                            <li><a >我的优惠券</a></li>
-                        </ul>
-                    </li>
-                    <li class="item cart"><a href="cart.html">购物车
-                            <strong>0</strong> 件</a></li>
-                    <li class="item order"><a >订阅关注</a>
-                        <div class="ordernav">
-                            <div class="ordernav" style="display: none;">
-                                <div class="orderewm">
-                                    <div class="ewmcon">
-                                        <img src="images/help/ewm1.png" height="80" width="80" alt="">
-                                        <h5>微信订阅号</h5>
-                                    </div>
-                                    <div class="ewmcon">
-                                        <img src="images/help/ewm2.png" height="80" width="80" alt="">
-                                        <h5>微信企业号</h5>
-                                    </div>
-                                </div>
-                                <div class="orderatt">
-                                    <h5>关注我们</h5>
-                                    <div class="attshare">
-                                        <a ></a>
-                                        <a ></a>
-                                    </div>
-                                    <h5>邮件订阅</h5>
-                                    <div class="feed">
-                                        <input type="text" class="ftxt" id="txtTopEmail" placeholder="请输入您的邮箱地址">
-                                        <input type="button" value="订阅" class="fbtn" id="btnTopAddEmail">
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="item helpcenter"><a >帮助中心</a></li>
-                    <li class="item sitemap"><a >网站导航</a>
-                        <div class="sitemapnav">
-
-                        </div>
-                    </li>
-                    <li class="item addfav"><a >Ctrl+D</span></li>
-                </ul>
-                <div id="userinfo">
-                    Hi，欢迎来到海淘橙 <a href='server.html?0'>[登录]</a>
-                    <a href='server.html?1'>[注册]</a>
-                    <span class='tip'> 注册有礼</span>
-                </div>
-            </div>
+            <script>
+                $(".topbar").load("http://localhost/haitaocheng/header.html .topbarcon");
+            </script>
         </div>
         <div class="hdwraper">
-            <div id="top" class="area">
-                <a id="logo" ><img src="images/logo.png" height="78" width="198" alt="海淘橙Logo"></a>
-                <div class="search">
-                    <div class="searchcon">
-                        <input type="text" placeholder="请输入关键词或商品链接" class="stxt" id="txt_search">
-                        <input type="button" value="" id="btn_search" class="sbtn">
-                    </div>
-                    <div class="keyword">
-                        <a  target='_blank'>ECCO爱步</a>
-                        <a  target='_blank'>阿迪达斯</a>
-                        <a  target='_blank'>Columbia</a>
-                        <a  target='_blank'>保加利亚红玫瑰</a>
-                        <a  target='_blank'>男表</a>
-                        <a  target='_blank'>女表/Kao</a>
-                        <a  target='_blank'>爱他美</a>
-                    </div>
-                </div>
-                <div class="topslogan">海外直邮 直播直购 正品保障</div>
-            </div>
+            <script>
+                $(".hdwraper").load("http://localhost/haitaocheng/header.html #top");
+            </script>
         </div>
         <div id="hdwraper" class="navwrapper">
             <nav class="area mnav">
                 <div class="navigation">
-                    <h2><i></i><a >所有商品类目</a></h2>
+                    <h2><i></i><a>所有商品类目</a></h2>
                     <div class="navigationcon">
                         <ul id="catalog" class="catalog">
                             <li class="item item1">
                                 <div class="cataitem">
-                                    <h3><a ><i></i>手表饰品</a></h3>
+                                    <h3><a><i></i>手表饰品</a></h3>
                                     <p>
-                                        <a >男表</a>
-                                        <a >女表</a>
-                                        <a >户外仪表</a>
+                                        <a>男表</a>
+                                        <a>女表</a>
+                                        <a>户外仪表</a>
                                     </p>
                                 </div>
                                 <div class="subcat">
                                     <div class="subcatcon">
                                         <dl>
                                             <dt>
-                                                <a >男表</a></dt>
-                                            <dd><a >高档表</a>
-                                                <a >石英表</a>
-                                                <a >机械表</a>
+                                                <a>男表</a></dt>
+                                            <dd><a>高档表</a>
+                                                <a>石英表</a>
+                                                <a>机械表</a>
                                             </dd>
                                             <dt>
-                                                <a >女表</a></dt>
-                                            <dd><a >高档表</a>
-                                                <a >石英表</a>
-                                                <a >机械表</a>
-                                            </dd>
-
-                                            <dt>
-                                                <a >户外仪表</a>
-                                            </dt>
-                                            <dd><a >智能手环</a>
-                                                <a >心率表</a>
-                                                <a >户外仪表</a>
+                                                <a>女表</a></dt>
+                                            <dd><a>高档表</a>
+                                                <a>石英表</a>
+                                                <a>机械表</a>
                                             </dd>
 
                                             <dt>
-                                                <a >其他手表</a>
+                                                <a>户外仪表</a>
                                             </dt>
-                                            <dd><a >高档手表</a>
-                                                <a >闹钟</a>
-                                                <a >中性手表</a>
-                                                <a >儿童手表</a>
+                                            <dd><a>智能手环</a>
+                                                <a>心率表</a>
+                                                <a>户外仪表</a>
                                             </dd>
 
                                             <dt>
-                                                <a >饰品</a>
+                                                <a>其他手表</a>
                                             </dt>
-                                            <dd><a >耳饰</a>
-                                                <a >戒指</a>
-                                                <a >手链/手镯</a>
-                                                <a >项链</a>
+                                            <dd><a>高档手表</a>
+                                                <a>闹钟</a>
+                                                <a>中性手表</a>
+                                                <a>儿童手表</a>
+                                            </dd>
+
+                                            <dt>
+                                                <a>饰品</a>
+                                            </dt>
+                                            <dd><a>耳饰</a>
+                                                <a>戒指</a>
+                                                <a>手链/手镯</a>
+                                                <a>项链</a>
                                             </dd>
                                         </dl>
                                     </div>
-                                    <a >
+                                    <a>
                                         <img src="images/items/shoubiao.jpg" alt="" /></a><br />
                                     </a>
                                 </div>
@@ -165,100 +95,95 @@
 
                             <li class="item item2">
                                 <div class="cataitem">
-                                    <h3><a ><i></i>数码生活</a>
+                                    <h3><a><i></i>数码生活</a>
                                     </h3>
                                     <p>
-
-                                        <a >电子数码</a>
-
-                                        <a >生活电器</a>
-
-                                        <a >生活日用</a>
-
+                                        <a>电子数码</a>
+                                        <a>生活电器</a>
+                                        <a>生活日用</a>
                                     </p>
                                 </div>
                                 <div class="subcat">
                                     <div class="subcatcon">
                                         <dl>
 
-                                            <dt> <a >电子数码</a>
+                                            <dt> <a>电子数码</a>
                                             </dt>
-                                            <dd><a >智能穿戴</a>
-                                                <a >摄影摄像</a>
-                                                <a >数码配件</a>
-                                                <a >时尚影音</a>
-                                                <a >电脑</a>
-                                                <a >电脑配件</a>
-                                                <a >手机通讯</a>
-                                                <a >手机配件</a>
-                                                <a >办公用品</a>
-                                                <a >电子教育</a>
+                                            <dd><a>智能穿戴</a>
+                                                <a>摄影摄像</a>
+                                                <a>数码配件</a>
+                                                <a>时尚影音</a>
+                                                <a>电脑</a>
+                                                <a>电脑配件</a>
+                                                <a>手机通讯</a>
+                                                <a>手机配件</a>
+                                                <a>办公用品</a>
+                                                <a>电子教育</a>
                                             </dd>
 
-                                            <dt> <a >生活电器</a>
+                                            <dt> <a>生活电器</a>
                                             </dt>
-                                            <dd><a >扫地机器人</a>
-                                                <a >净水设备</a>
-                                                <a >吸尘器</a>
-                                                <a >空气净化器</a>
-                                                <a >其他生活电器</a>
+                                            <dd><a>扫地机器人</a>
+                                                <a>净水设备</a>
+                                                <a>吸尘器</a>
+                                                <a>空气净化器</a>
+                                                <a>其他生活电器</a>
                                             </dd>
 
-                                            <dt> <a >生活日用</a>
+                                            <dt> <a>生活日用</a>
                                             </dt>
-                                            <dd><a >个人护理</a>
-                                                <a >净化除味</a>
-                                                <a >收纳用品</a>
+                                            <dd><a>个人护理</a>
+                                                <a>净化除味</a>
+                                                <a>收纳用品</a>
                                             </dd>
 
-                                            <dt> <a >厨房电器</a>
+                                            <dt> <a>厨房电器</a>
                                             </dt>
-                                            <dd><a >咖啡机</a>
-                                                <a >料理/榨汁机</a>
-                                                <a >烘培设备</a>
-                                                <a >其他厨房电器</a>
+                                            <dd><a>咖啡机</a>
+                                                <a>料理/榨汁机</a>
+                                                <a>烘培设备</a>
+                                                <a>其他厨房电器</a>
                                             </dd>
 
-                                            <dt> <a >厨具</a>
+                                            <dt> <a>厨具</a>
                                             </dt>
-                                            <dd><a >烹饪锅具</a>
-                                                <a >餐具</a>
-                                                <a >水具酒具</a>
-                                                <a >茶具/咖啡具</a>
-                                                <a >厨房配件</a>
+                                            <dd><a>烹饪锅具</a>
+                                                <a>餐具</a>
+                                                <a>水具酒具</a>
+                                                <a>茶具/咖啡具</a>
+                                                <a>厨房配件</a>
                                             </dd>
 
-                                            <dt> <a >家居家纺</a>
+                                            <dt> <a>家居家纺</a>
                                             </dt>
-                                            <dd><a >床品套件</a>
-                                                <a >抱枕靠垫</a>
-                                                <a >床单被罩</a>
-                                                <a >窗帘/窗纱</a>
-                                                <a >毯子</a>
+                                            <dd><a>床品套件</a>
+                                                <a>抱枕靠垫</a>
+                                                <a>床单被罩</a>
+                                                <a>窗帘/窗纱</a>
+                                                <a>毯子</a>
                                             </dd>
 
-                                            <dt> <a >家装软饰</a>
+                                            <dt> <a>家装软饰</a>
                                             </dt>
-                                            <dd><a >墙贴/装饰</a>
-                                                <a >摆件挂件</a>
-                                                <a >创意家居</a>
+                                            <dd><a>墙贴/装饰</a>
+                                                <a>摆件挂件</a>
+                                                <a>创意家居</a>
                                             </dd>
 
                                         </dl>
                                     </div>
-                                    <a >
+                                    <a>
                                         <img src="images/items/shuma.jpg" alt="" />
                                     </a>
                                 </div>
                             </li>
                             <li class="item item3">
                                 <div class="cataitem">
-                                    <h3><a ><i></i>母婴用品</a></h3>
+                                    <h3><a><i></i>母婴用品</a></h3>
                                     <p>
-                                        <a >奶粉辅食</a>
-                                        <a >洗护日用</a>
-                                        <a >喂养日用</a>
-
+                                        <a>奶粉辅食</a>
+                                        <a>洗护日用</a>
+                                        <a>喂养日用</a>
                                     </p>
                                 </div>
                                 <div class="subcat">
@@ -266,7 +191,7 @@
 
                                     </div>
 
-                                    <a >
+                                    <a>
                                         <img src="images/items/naifen.jpg" alt="" />
                                     </a>
                                 </div>
@@ -274,12 +199,12 @@
 
                             <li class="item item4">
                                 <div class="cataitem">
-                                    <h3><a ><i></i>营养健康</a>
+                                    <h3><a><i></i>营养健康</a>
                                     </h3>
                                     <p>
-                                        <a >强健男人</a>
-                                        <a >儿童成长</a>
-                                        <a >关爱老人</a>
+                                        <a>强健男人</a>
+                                        <a>儿童成长</a>
+                                        <a>关爱老人</a>
 
                                     </p>
                                 </div>
@@ -287,7 +212,7 @@
                                     <div class="subcatcon">
 
                                     </div>
-                                    <a >
+                                    <a>
                                         <img src="images/items/baojian.jpg" alt="" />
                                     </a>
                                 </div>
@@ -295,19 +220,19 @@
 
                             <li class="item item5">
                                 <div class="cataitem">
-                                    <h3><a ><i></i>护肤美妆</a>
+                                    <h3><a><i></i>护肤美妆</a>
                                     </h3>
                                     <p>
-                                        <a >面部护肤</a>
-                                        <a >时尚彩妆</a>
-                                        <a >身体护理</a>
+                                        <a>面部护肤</a>
+                                        <a>时尚彩妆</a>
+                                        <a>身体护理</a>
                                     </p>
                                 </div>
                                 <div class="subcat">
                                     <div class="subcatcon">
 
                                     </div>
-                                    <a >
+                                    <a>
                                         <img src="images/items/hufu.jpg" alt="" />
                                     </a>
                                 </div>
@@ -315,19 +240,19 @@
 
                             <li class="item item6">
                                 <div class="cataitem">
-                                    <h3><a ><i></i>箱包、鞋靴</a>
+                                    <h3><a><i></i>箱包、鞋靴</a>
                                     </h3>
                                     <p>
-                                        <a >女鞋</a>
-                                        <a >女包</a>
-                                        <a >男包</a>
+                                        <a>女鞋</a>
+                                        <a>女包</a>
+                                        <a>男包</a>
                                     </p>
                                 </div>
                                 <div class="subcat">
                                     <div class="subcatcon">
                                     </div>
                                     <div class="subcatad" style="white-space:normal;">
-                                        <a >
+                                        <a>
                                             <img src="images/items/xiezi.jpg" alt="" />
                                         </a>
                                     </div>
@@ -336,17 +261,17 @@
 
                             <li class="item item7">
                                 <div class="cataitem">
-                                    <h3><a ><i></i>服装、户外</a></h3>
+                                    <h3><a><i></i>服装、户外</a></h3>
                                     <p>
-                                        <a >男装</a>
-                                        <a >女装</a>
-                                        <a >户外鞋服</a>
+                                        <a>男装</a>
+                                        <a>女装</a>
+                                        <a>户外鞋服</a>
                                     </p>
                                 </div>
                                 <div class="subcat">
                                     <div class="subcatcon">
                                     </div>
-                                    <a >
+                                    <a>
                                         <img src="images/items/bao.jpg" alt="" />
                                     </a>
                                 </div>
@@ -355,18 +280,18 @@
                     </div>
                 </div>
                 <div class="slogo">
-                    <a >
+                    <a>
                         <img src="images/slogo.png" height="37" width="123" alt="">
                     </a>
                 </div>
                 <ul class="menu">
-                    <li><a >首页</a></li>
-                    <li><a >饰品手表</a></li>
-                    <li><a >数码电器</a></li>
-                    <li><a >母婴用品</a></li> 
-                    <li><a >营养健康</a></li> 
-                    <li><a >护肤美妆</a></li> 
-                    <li><a >家居生活</a></li> 
+                    <li><a>首页</a></li>
+                    <li><a>饰品手表</a></li>
+                    <li><a>数码电器</a></li>
+                    <li><a>母婴用品</a></li>
+                    <li><a>营养健康</a></li>
+                    <li><a>护肤美妆</a></li>
+                    <li><a>家居生活</a></li>
                 </ul>
             </nav>
         </div>
@@ -400,14 +325,14 @@
         </script>
         <div class="notice">
             <div class="noticead">
-                <a  /><img src="images/banner/guangao.jpg" width="195" height="260px" alt=""></a>
+                <a /><img src="images/banner/guangao.jpg" width="195" height="260px" alt=""></a>
             </div>
             <div class="noticecon">
-                <h4>海淘橙公告<span class="more"><a >更多></a></span></h4>
+                <h4>海淘橙公告<span class="more"><a>更多></a></span></h4>
                 <ul class="noticelist">
-                    <li><a >关于我们XXX</a></li>
-                    <li><a >关于我们XXX</a></li>
-                    <li><a >关于我们XXX</a></li>
+                    <li><a>关于我们XXX</a></li>
+                    <li><a>关于我们XXX</a></li>
+                    <li><a>关于我们XXX</a></li>
                 </ul>
             </div>
         </div>
@@ -415,19 +340,19 @@
     <section class="area content">
         <section class="indexrecom">
             <div class="rtabt">
-                <h3><a >热门品牌</a></h3>
+                <h3><a>热门品牌</a></h3>
                 <ul>
-                    <li class="on"><a >男士必备</a></li>
-                    <li><a >魅力女人</a></li>
-                    <li><a >妈妈宝贝</a></li>
-                    <li><a >大牌专项</a></li>
+                    <li class="on"><a>男士必备</a></li>
+                    <li><a>魅力女人</a></li>
+                    <li><a>妈妈宝贝</a></li>
+                    <li><a>大牌专项</a></li>
                 </ul>
-                <span class="more"><a >更多</a></span>
+                <span class="more"><a>更多</a></span>
             </div>
             <div class="rtabcon">
                 <div class="rtabc_recom">
                     <div class="rtabad">
-                        <a ><img src="images/main/i10.jpg" alt="" /></a>
+                        <a><img src="images/main/i10.jpg" alt="" /></a>
                     </div>
                     <div class="rtabbrand">
                         <ul class="rebrandlist cl">
@@ -436,95 +361,95 @@
                                     <img src="images/main/m0.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m1.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m2.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m3.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m4.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m5.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m6.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m7.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m8.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m9.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m3.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m4.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                         </ul>
@@ -532,113 +457,113 @@
                     <div class="rtabsad">
                         <ul>
                             <li>
-                                <a ><img src="images/main/i11.jpg" alt="" /></a>
+                                <a><img src="images/main/i11.jpg" alt="" /></a>
                             </li>
                             <li>
-                                <a ><img src="images/main/i12.jpg" alt="" /></a>
+                                <a><img src="images/main/i12.jpg" alt="" /></a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="rtabc_brand">
                     <div class="rtabad">
-                        <a ><img src="images/main/i4.jpg" alt="" /></a></div>
+                        <a><img src="images/main/i4.jpg" alt="" /></a></div>
                     <div class="rtabbrand">
                         <ul class="rebrandlist cl">
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m6.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m7.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m7.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m4.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m5.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m6.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m8.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m9.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m3.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m8.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m9.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m4.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                         </ul>
@@ -646,113 +571,113 @@
                     <div class="rtabsad">
                         <ul>
                             <li>
-                                <a ><img src="images/main/i5.jpg" alt="" /></a>
+                                <a><img src="images/main/i5.jpg" alt="" /></a>
                             </li>
                             <li>
-                                <a ><img src="images/main/i6.jpg" alt="" /></a>
+                                <a><img src="images/main/i6.jpg" alt="" /></a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="rtabc_brand">
                     <div class="rtabad">
-                        <a ><img src="images/main/i7.jpg" alt="" /></a></div>
+                        <a><img src="images/main/i7.jpg" alt="" /></a></div>
                     <div class="rtabbrand">
                         <ul class="rebrandlist cl">
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m6.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m7.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m8.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m9.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m4.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m5.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m6.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m7.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m8.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m9.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m3.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m4.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
 
@@ -761,113 +686,113 @@
                     <div class="rtabsad">
                         <ul>
                             <li>
-                                <a ><img src="images/main/i8.jpg" alt="" /></a>
+                                <a><img src="images/main/i8.jpg" alt="" /></a>
                             </li>
                             <li>
-                                <a ><img src="images/main/i9.jpg" alt="" /></a>
+                                <a><img src="images/main/i9.jpg" alt="" /></a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="rtabc_brand">
                     <div class="rtabad">
-                        <a ><img src="images/main/i1.jpg" alt="" /></a></div>
+                        <a><img src="images/main/i1.jpg" alt="" /></a></div>
                     <div class="rtabbrand">
                         <ul class="rebrandlist cl">
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m4.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m4.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m8.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m9.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m3.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m4.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m5.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m6.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m7.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m8.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m9.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                             <li>
-                                <a >
+                                <a>
                                     <img src="images/main/m3.jpg" height="93" width="189" alt="">
                                 </a>
                                 <h6>
-                                    <a  class="addfav jq_brand" title="收藏该品牌"></a>
+                                    <a class="addfav jq_brand" title="收藏该品牌"></a>
                                 </h6>
                             </li>
                         </ul>
@@ -875,10 +800,10 @@
                     <div class="rtabsad">
                         <ul>
                             <li>
-                                <a ><img src="images/main/i2.jpg" alt="" /></a>
+                                <a><img src="images/main/i2.jpg" alt="" /></a>
                             </li>
                             <li>
-                                <a ><img src="images/main/i3.jpg" alt="" /></a>
+                                <a><img src="images/main/i3.jpg" alt="" /></a>
                             </li>
                         </ul>
                     </div>
@@ -889,50 +814,50 @@
             <div class="maincon cl">
                 <div class="mleft">
                     <div class="ifast">
-                        <h2><a >闪购直邮 正品直发 全场包邮</a></h2>
+                        <h2><a>闪购直邮 正品直发 全场包邮</a></h2>
                         <dl class="inav">
-                            <dt><a >母婴用品</a></dt>
+                            <dt><a>母婴用品</a></dt>
                             <dd>
                                 <ul class="cl">
-                                    <li><a >奶粉/辅食</a></li>
-                                    <li><a >奶瓶/奶嘴</a></li>
-                                    <li><a >喂养餐具</a></li>
-                                    <li><a >纸尿裤/湿巾</a></li>
-                                    <li><a >卫生巾/护垫</a></li>
-                                    <li><a >洗护日用</a></li>
-                                    <li><a >宝宝营养</a></li>
+                                    <li><a>奶粉/辅食</a></li>
+                                    <li><a>奶瓶/奶嘴</a></li>
+                                    <li><a>喂养餐具</a></li>
+                                    <li><a>纸尿裤/湿巾</a></li>
+                                    <li><a>卫生巾/护垫</a></li>
+                                    <li><a>洗护日用</a></li>
+                                    <li><a>宝宝营养</a></li>
                                 </ul>
                             </dd>
-                            <dt><a >美食保健</a></dt>
+                            <dt><a>美食保健</a></dt>
                             <dd>
                                 <ul class="cl">
-                                    <li><a >维生素/矿物质</a></li>
-                                    <li><a >鱼油</a></li>
-                                    <li><a >补肾护肝</a></li>
-                                    <li><a >关节骨骼</a></li>
+                                    <li><a>维生素/矿物质</a></li>
+                                    <li><a>鱼油</a></li>
+                                    <li><a>补肾护肝</a></li>
+                                    <li><a>关节骨骼</a></li>
                                 </ul>
                             </dd>
-                            <dt><a >护肤彩妆</a></dt>
+                            <dt><a>护肤彩妆</a></dt>
                             <dd>
                                 <ul class="cl">
-                                    <li><a >洁面/卸妆</a></li>
-                                    <li><a >面霜乳液</a></li>
-                                    <li><a >眼霜/唇霜</a></li>
-                                    <li><a >面膜/精华</a></li>
-                                    <li><a >爽肤水</a></li>
-                                    <li><a >男士专区</a></li>
-                                    <li><a >防晒/修护</a></li>
-                                    <li><a >BB/CC霜</a></li>
-                                    <li><a >身体洗护</a></li>
-                                    <li><a >香水</a></li>
-                                    <li><a >彩妆</a></li>
-                                    <li><a >粉饼/粉底</a></li>
+                                    <li><a>洁面/卸妆</a></li>
+                                    <li><a>面霜乳液</a></li>
+                                    <li><a>眼霜/唇霜</a></li>
+                                    <li><a>面膜/精华</a></li>
+                                    <li><a>爽肤水</a></li>
+                                    <li><a>男士专区</a></li>
+                                    <li><a>防晒/修护</a></li>
+                                    <li><a>BB/CC霜</a></li>
+                                    <li><a>身体洗护</a></li>
+                                    <li><a>香水</a></li>
+                                    <li><a>彩妆</a></li>
+                                    <li><a>粉饼/粉底</a></li>
                                 </ul>
                             </dd>
-                            <dt><a >数码家居</a></dt>
+                            <dt><a>数码家居</a></dt>
                             <dd>
                                 <ul class="cl">
-                                    <li><a >电子数码</a></li>
+                                    <li><a>电子数码</a></li>
                                 </ul>
                             </dd>
 
@@ -942,7 +867,7 @@
                 </div>
                 <div class="mcenter">
                     <div class="mad">
-                        <a >
+                        <a>
                             <img src="images/adv/a1.jpg" alt="" />
                         </a>
                     </div>
@@ -971,22 +896,22 @@
                 <div class="mright">
                     <ul class="mradlist">
                         <li>
-                            <a ><img src="images/adv/a11.jpg" alt="" /></a>
+                            <a><img src="images/adv/a11.jpg" alt="" /></a>
                         </li>
                         <li>
-                            <a ><img src="images/adv/a12.jpg" alt="" /></a>
+                            <a><img src="images/adv/a12.jpg" alt="" /></a>
                         </li>
                         <li>
-                            <a ><img src="images/adv/a13.jpg" alt="" /></a>
+                            <a><img src="images/adv/a13.jpg" alt="" /></a>
                         </li>
                         <li>
-                            <a ><img src="images/adv/a14.jpg" alt="" /></a>
+                            <a><img src="images/adv/a14.jpg" alt="" /></a>
                         </li>
                         <li>
-                            <a ><img src="images/adv/a15.jpg" alt="" /></a>
+                            <a><img src="images/adv/a15.jpg" alt="" /></a>
                         </li>
                         <li>
-                            <a ><img src="images/adv/a16.jpg" alt="" /></a>
+                            <a><img src="images/adv/a16.jpg" alt="" /></a>
                         </li>
                     </ul>
                 </div>
@@ -994,41 +919,41 @@
         </section>
         <section class="mainbox">
             <div class="mtitle">
-                <span class="more"><a >更多</a></span>
-                <h2 class="mt1"><a >欧美馆</a>
+                <span class="more"><a>更多</a></span>
+                <h2 class="mt1"><a>欧美馆</a>
                 </h2>
             </div>
             <div class="maincon cl">
                 <div class="mleft">
                     <div class="ifast">
                         <dl class="inav">
-                            <dt><a >热门分类</a>
+                            <dt><a>热门分类</a>
                             </dt>
                             <dd>
                                 <ul class="cl">
-                                    <li><a >家居厨电</a></li>
+                                    <li><a>家居厨电</a></li>
                                 </ul>
                             </dd>
                             <dt>品牌</dt>
                             <dd>
                                 <ul class="cl">
-                                    <li><a >GNC</a></li>
-                                    <li><a >Mead Johnson</a></li>
-                                    <li><a >Childlife</a></li>
-                                    <li><a >loreal</a></li>
-                                    <li><a >Giorgio Armani</a></li>
-                                    <li><a >The Body Shop</a></li>
-                                    <li><a >fresh</a></li>
-                                    <li><a >lee</a></li>
-                                    <li><a >comotomo</a></li>
-                                    <li><a >Similac</a></li>
-                                    <li><a >Kirkland Signature</a></li>
+                                    <li><a>GNC</a></li>
+                                    <li><a>Mead Johnson</a></li>
+                                    <li><a>Childlife</a></li>
+                                    <li><a>loreal</a></li>
+                                    <li><a>Giorgio Armani</a></li>
+                                    <li><a>The Body Shop</a></li>
+                                    <li><a>fresh</a></li>
+                                    <li><a>lee</a></li>
+                                    <li><a>comotomo</a></li>
+                                    <li><a>Similac</a></li>
+                                    <li><a>Kirkland Signature</a></li>
                                 </ul>
                             </dd>
                             <dt>热搜</dt>
                             <dd>
                                 <ul class="cl">
-                                    <li><a >日用百货</a></li>
+                                    <li><a>日用百货</a></li>
                                 </ul>
                             </dd>
                         </dl>
@@ -1036,7 +961,7 @@
                 </div>
                 <div class="mcenter">
                     <div class="mad">
-                        <a ><img src="images/adv/a2.jpg" alt="" /></a></div>
+                        <a><img src="images/adv/a2.jpg" alt="" /></a></div>
                     <div class="mrepro">
                         <ul class="reporlist cl">
                             <!--  -->
@@ -1046,22 +971,22 @@
                 <div class="mright">
                     <ul class="mradlist">
                         <li>
-                            <a ><img src="images/adv/a21.jpg" alt="" /></a>
+                            <a><img src="images/adv/a21.jpg" alt="" /></a>
                         </li>
                         <li>
-                            <a ><img src="images/adv/a22.jpg" alt="" /></a>
+                            <a><img src="images/adv/a22.jpg" alt="" /></a>
                         </li>
                         <li>
-                            <a ><img src="images/adv/a23.jpg" alt="" /></a>
+                            <a><img src="images/adv/a23.jpg" alt="" /></a>
                         </li>
                         <li>
-                            <a ><img src="images/adv/a24.jpg" alt="" /></a>
+                            <a><img src="images/adv/a24.jpg" alt="" /></a>
                         </li>
                         <li>
-                            <a ><img src="images/adv/a25.jpg" alt="" /></a>
+                            <a><img src="images/adv/a25.jpg" alt="" /></a>
                         </li>
                         <li>
-                            <a ><img src="images/adv/a26.jpg" alt="" /></a>
+                            <a><img src="images/adv/a26.jpg" alt="" /></a>
                         </li>
                     </ul>
                 </div>
@@ -1074,12 +999,12 @@
             <div class="mtabt">
                 <h3>精选分类</h3>
                 <ul>
-                    <li class="on"><a >手表饰品</a></li>
-                    <li><a >数码、家居</a></li>
-                    <li><a >营养健康</a></li>
-                    <li><a >护肤美妆</a></li>
-                    <li><a >箱包、鞋靴</a></li>
-                    <li><a >服装、户外</a></li>
+                    <li class="on"><a>手表饰品</a></li>
+                    <li><a>数码、家居</a></li>
+                    <li><a>营养健康</a></li>
+                    <li><a>护肤美妆</a></li>
+                    <li><a>箱包、鞋靴</a></li>
+                    <li><a>服装、户外</a></li>
 
                 </ul>
             </div>
@@ -1092,10 +1017,10 @@
                                 <dt>推荐品牌</dt>
                                 <dd>
                                     <ul class="cl">
-                                        <li><a >Columbia</a></li>
-                                        <li><a >Levi's</a></li>
-                                        <li><a >Tissot</a></li>
-                                        <li><a >CITIZEN</a></li>
+                                        <li><a>Columbia</a></li>
+                                        <li><a>Levi's</a></li>
+                                        <li><a>Tissot</a></li>
+                                        <li><a>CITIZEN</a></li>
                                     </ul>
                                 </dd>
                                 <dt>热搜</dt>
@@ -1105,7 +1030,7 @@
                                     </ul>
                                 </dd>
                             </dl>
-                            <div class="vmore"><a >更多</a></div>
+                            <div class="vmore"><a>更多</a></div>
                         </div>
                     </div>
                     <div class="mbcenter">
@@ -1120,7 +1045,7 @@
                         </ul>
                     </div>
                     <div class="mbright">
-                        <a ><img src="images/adv/a3.jpg" alt="" /></a>
+                        <a><img src="images/adv/a3.jpg" alt="" /></a>
                     </div>
                 </div>
 
@@ -1131,19 +1056,19 @@
                                 <dt>推荐品牌</dt>
                                 <dd>
                                     <ul class="cl">
-                                        <li><a >Panasonic</a></li>
+                                        <li><a>Panasonic</a></li>
                                     </ul>
                                 </dd>
                                 <dt>热搜</dt>
                                 <dd>
                                     <ul class="cl">
-                                        <li><a >烹饪锅具</a></li>
-                                        <li><a >餐具</a></li>
-                                        <li><a >厨房配件</a></li>
+                                        <li><a>烹饪锅具</a></li>
+                                        <li><a>餐具</a></li>
+                                        <li><a>厨房配件</a></li>
                                     </ul>
                                 </dd>
                             </dl>
-                            <div class="vmore"><a >更多</a></div>
+                            <div class="vmore"><a>更多</a></div>
                         </div>
                     </div>
                     <div class="mbcenter">
@@ -1152,7 +1077,7 @@
                         </ul>
                     </div>
                     <div class="mbright">
-                        <a ><img src="images/adv/a4.jpg" alt="" /></a>
+                        <a><img src="images/adv/a4.jpg" alt="" /></a>
                     </div>
                 </div>
 
@@ -1163,11 +1088,11 @@
                                 <dt>推荐品牌</dt>
                                 <dd>
                                     <ul class="cl">
-                                        <li><a >GNC</a></li>
-                                        <li><a >Swisse</a></li>
-                                        <li><a >Ddrops</a></li>
-                                        <li><a >Muscletech</a></li>
-                                        <li><a >222</a></li>
+                                        <li><a>GNC</a></li>
+                                        <li><a>Swisse</a></li>
+                                        <li><a>Ddrops</a></li>
+                                        <li><a>Muscletech</a></li>
+                                        <li><a>222</a></li>
                                     </ul>
                                 </dd>
                                 <dt>热搜</dt>
@@ -1176,7 +1101,7 @@
                                     </ul>
                                 </dd>
                             </dl>
-                            <div class="vmore"><a >更多</a></div>
+                            <div class="vmore"><a>更多</a></div>
                         </div>
                     </div>
                     <div class="mbcenter">
@@ -1185,7 +1110,7 @@
                         </ul>
                     </div>
                     <div class="mbright">
-                        <a ><img src="images/adv/a5.jpg" alt="" /></a>
+                        <a><img src="images/adv/a5.jpg" alt="" /></a>
                     </div>
                 </div>
 
@@ -1196,10 +1121,10 @@
                                 <dt>推荐品牌</dt>
                                 <dd>
                                     <ul class="cl">
-                                        <li><a >loreal</a></li>
-                                        <li><a >Olay</a></li>
-                                        <li><a >fresh</a></li>
-                                        <li><a >Kirkland Signature</a></li>
+                                        <li><a>loreal</a></li>
+                                        <li><a>Olay</a></li>
+                                        <li><a>fresh</a></li>
+                                        <li><a>Kirkland Signature</a></li>
                                     </ul>
                                 </dd>
                                 <dt>热搜</dt>
@@ -1208,7 +1133,7 @@
                                     </ul>
                                 </dd>
                             </dl>
-                            <div class="vmore"><a >更多</a></div>
+                            <div class="vmore"><a>更多</a></div>
                         </div>
                     </div>
                     <div class="mbcenter">
@@ -1217,7 +1142,7 @@
                         </ul>
                     </div>
                     <div class="mbright">
-                        <a ><img src="images/adv/a6.jpg" alt="" /></a>
+                        <a><img src="images/adv/a6.jpg" alt="" /></a>
                     </div>
                 </div>
 
@@ -1228,9 +1153,9 @@
                                 <dt>推荐品牌</dt>
                                 <dd>
                                     <ul class="cl">
-                                        <li><a >ECCO</a></li>
-                                        <li><a >Clarks</a></li>
-                                        <li><a >Samsonite</a></li>
+                                        <li><a>ECCO</a></li>
+                                        <li><a>Clarks</a></li>
+                                        <li><a>Samsonite</a></li>
                                     </ul>
                                 </dd>
                                 <dt>热搜</dt>
@@ -1240,7 +1165,7 @@
                                     </ul>
                                 </dd>
                             </dl>
-                            <div class="vmore"><a >更多</a></div>
+                            <div class="vmore"><a>更多</a></div>
                         </div>
                     </div>
                     <div class="mbcenter">
@@ -1249,7 +1174,7 @@
                         </ul>
                     </div>
                     <div class="mbright">
-                        <a ><img src="images/adv/a7.jpg" alt="" /></a>
+                        <a><img src="images/adv/a7.jpg" alt="" /></a>
                     </div>
                 </div>
 
@@ -1260,7 +1185,7 @@
                                 <dt>推荐品牌</dt>
                                 <dd>
                                     <ul class="cl">
-                                        <li><a >lee</a></li>
+                                        <li><a>lee</a></li>
                                     </ul>
                                 </dd>
                                 <dt>热搜</dt>
@@ -1269,7 +1194,7 @@
                                     </ul>
                                 </dd>
                             </dl>
-                            <div class="vmore"><a >更多</a></div>
+                            <div class="vmore"><a>更多</a></div>
                         </div>
                     </div>
                     <div class="mbcenter">
@@ -1278,7 +1203,7 @@
                         </ul>
                     </div>
                     <div class="mbright">
-                        <a ><img src="images/adv/a8.jpg" alt="" /></a>
+                        <a><img src="images/adv/a8.jpg" alt="" /></a>
                     </div>
                 </div>
             </div>
@@ -1288,107 +1213,9 @@
 
 
     <footer id="footer">
-        <div class="botslogan">
-            <div class="botslogancon">
-                <img src="images/module/bot_slogan.png" height="96" width="950" alt="">
-            </div>
-        </div>
-        <div class="area ft">
-            <div class="botbox cl">
-                <div class="botnav">
-                    <dl class="bn1">
-                        <dt>
-                            <a >海淘橙</a>
-                        </dt>
-                        <dd>
-                            <ul>
-                                <li><a >关于我们</a></li>
-                                <li><a >免责声明</a></li>
-                                <li><a >联系我们</a></li>
-                            </ul>
-                        </dd>
-                    </dl>
-                    <dl class="bn2">
-                        <dt>
-                            能做什么
-                        </dt>
-                        <dd>
-                            <ul>
-                                <li><a >意见/建议</a></li>
-                                <li><a >海淘购物</a></li>
-                                <li><a >友情链接</a></li>
-                            </ul>
-                        </dd>
-                    </dl>
-                    <dl class="bn3">
-                        <dt>
-                            <a >帮助中心</a>
-                        </dt>
-                        <dd>
-                            <ul>
-                                <li><a >新手指南</a></li>
-                                <li><a >常见问题</a></li>
-                                <li><a >正品保证</a></li>
-                                <li><a >物流配送</a></li>
-                            </ul>
-                        </dd>
-                    </dl>
-                    <dl class="bn4">
-                        <dt>
-                            <a >资讯频道</a>
-                        </dt>
-                        <dd>
-                            <ul>
-                                <li><a >海淘资讯</a></li>
-                                <li><a >网站公告</a></li>
-                                <li><a >网站地图</a></li>
-                            </ul>
-                        </dd>
-                    </dl>
-                </div>
-                <div class="botewm">
-                    <ul class="cl">
-                        <li>
-                            <h5>微信订阅号</h5>
-                            <p>扫一扫有惊喜</p>
-                            <div class="ewmpic">
-                                <img src="images/help/ewm1.png" height="80" width="80" alt="">
-                                <span class="bigewm"></span>
-                            </div>
-                        </li>
-                        <li>
-                            <h5>微信服务号</h5>
-                            <p>扫一扫有惊喜</p>
-                            <div class="ewmpic">
-                                <img src="images/help/ewm2.png" height="80" width="80" alt="">
-                                <span class="bigewm"></span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="attus">
-                    <h5>关注我们</h5>
-                    <ul class="attshare">
-                        <li><a ></a>
-                        </li>
-
-                        <li><a ></a></li>
-
-                    </ul>
-                    <h5>邮件订阅</h5>
-                    <div class="feed" id="div_feed">
-                        <input type="text" id="txtEmail" class="ftxt" placeholder="请输入您的邮箱地址，订阅最新优惠">
-                        <input type="button" id="btnAddEmail" value="订阅" class="fbtn">
-                    </div>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>
-                    Copyright 2012-2016 海淘橙 haitaocheng.com. All Rights Reserved.
-                    <a ref="nofollow" >粤ICP备14073754号-1</a>
-                </p>
-            </div>
-        </div>
+        <script>
+            $("#footer").load("http://localhost/haitaocheng/footer.html");
+        </script>
     </footer>
 
     <script src="js/jquery.cookie.js"></script>

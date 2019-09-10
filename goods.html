@@ -18,86 +18,14 @@
 <body>
     <header id="header">
         <div class="topbar">
-            <div class="area topbarcon">
-                <ul class="navbox">
-                    <li class="item ucenter"><a href="#">我的海淘</a>
-                        <ul>
-                            <li><a href="#">我的订单</a></li>
-                            <li><a href="#">我的账户</a></li>
-
-                            <li><a href="#">我的消息</a></li>
-                            <li><a href="#">我的优惠券</a></li>
-                        </ul>
-                    </li>
-                    <li class="item cart"><a href="cart.html">购物车
-                            <strong>0</strong> 件</a></li>
-                    <li class="item order"><a href="#">订阅关注</a>
-                        <div class="ordernav">
-                            <div class="ordernav" style="display: none;">
-                                <div class="orderewm">
-                                    <div class="ewmcon">
-                                        <img src="images/help/ewm1.png" height="80" width="80" alt="">
-                                        <h5>微信订阅号</h5>
-                                    </div>
-                                    <div class="ewmcon">
-                                        <img src="images/help/ewm2.png" height="80" width="80" alt="">
-                                        <h5>微信企业号</h5>
-                                    </div>
-                                </div>
-                                <div class="orderatt">
-                                    <h5>关注我们</h5>
-                                    <div class="attshare">
-                                        <a href="#"></a>
-
-                                        <a href="#"></a>
-
-                                    </div>
-                                    <h5>邮件订阅</h5>
-                                    <div class="feed">
-                                        <input type="text" class="ftxt" id="txtTopEmail" placeholder="请输入您的邮箱地址">
-                                        <input type="button" value="订阅" class="fbtn" id="btnTopAddEmail">
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="item helpcenter"><a href="#">帮助中心</a></li>
-                    <li class="item sitemap"><a href="#">网站导航</a>
-                        <div class="sitemapnav">
-
-                        </div>
-                    </li>
-                    <li class="item addfav"><a href="#">Ctrl+D</span></li>
-                </ul>
-                <div id="userinfo">
-                    Hi，欢迎来到海淘橙 <a href='server.html'>[登录]</a>
-                    <a href='server.html'>[注册]</a>
-                    <span class='tip'> 注册有礼</span>
-                </div>
-            </div>
+            <script>
+                $(".topbar").load("http://localhost/haitaocheng/header.html .topbarcon");
+            </script>
         </div>
         <div class="hdwraper">
-            <div id="top" class="area">
-                <a id="logo" href="#"><img src="images/logo.png" height="78" width="198" alt="海淘橙Logo"></a>
-                <div class="search">
-                    <div class="searchcon">
-                        <input type="text" placeholder="请输入关键词或商品链接" class="stxt" id="txt_search">
-                        <input type="button" value="" id="btn_search" class="sbtn">
-                    </div>
-                    <div class="keyword">
-                        <a href="#" target='_blank'>ECCO爱步</a>
-                        <a href="#" target='_blank'>阿迪达斯</a>
-                        <a href="#" target='_blank'>Columbia</a>
-                        <a href="#" target='_blank'>保加利亚红玫瑰</a>
-                        <a href="#" target='_blank'>男表</a>
-                        <a href="#" target='_blank'>女表/Kao</a>
-                        <a href="#" target='_blank'>爱他美</a>
-                    </div>
-                </div>
-                <div class="topslogan">海外直邮 直播直购 正品保障</div>
-            </div>
+            <script>
+                $(".hdwraper").load("http://localhost/haitaocheng/header.html #top");
+            </script>
         </div>
         <div id="hdwraper" class="navwrapper">
             <nav class="area mnav">
@@ -107,10 +35,13 @@
                     </a>
                 </div>
                 <ul class="menu">
-                    <li><a href="#">首页</a></li>
-                    <li><a href="#">饰品手表</a></li>
-                    <li><a href="#">数码生活</a></li>
-                    <li><a href="#">母婴用品</a></li>
+                    <li><a>首页</a></li>
+                    <li><a>饰品手表</a></li>
+                    <li><a>数码电器</a></li>
+                    <li><a>母婴用品</a></li>
+                    <li><a>营养健康</a></li>
+                    <li><a>护肤美妆</a></li>
+                    <li><a>家居生活</a></li>
                 </ul>
             </nav>
         </div>
@@ -198,107 +129,9 @@
 
 
     <footer id="footer">
-        <div class="botslogan">
-            <div class="botslogancon">
-                <img src="images/module/bot_slogan.png" height="96" width="950" alt="">
-            </div>
-        </div>
-        <div class="area ft">
-            <div class="botbox cl">
-                <div class="botnav">
-                    <dl class="bn1">
-                        <dt>
-                            <a href="#">海淘橙</a>
-                        </dt>
-                        <dd>
-                            <ul>
-                                <li><a href="#">关于我们</a></li>
-                                <li><a href="#">免责声明</a></li>
-                                <li><a href="#">联系我们</a></li>
-                            </ul>
-                        </dd>
-                    </dl>
-                    <dl class="bn2">
-                        <dt>
-                            能做什么
-                        </dt>
-                        <dd>
-                            <ul>
-                                <li><a href="#">意见/建议</a></li>
-                                <li><a href="#">海淘购物</a></li>
-                                <li><a href="#">友情链接</a></li>
-                            </ul>
-                        </dd>
-                    </dl>
-                    <dl class="bn3">
-                        <dt>
-                            <a href="#">帮助中心</a>
-                        </dt>
-                        <dd>
-                            <ul>
-                                <li><a href="#">新手指南</a></li>
-                                <li><a href="#">常见问题</a></li>
-                                <li><a href="#">正品保证</a></li>
-                                <li><a href="#">物流配送</a></li>
-                            </ul>
-                        </dd>
-                    </dl>
-                    <dl class="bn4">
-                        <dt>
-                            <a href="#">资讯频道</a>
-                        </dt>
-                        <dd>
-                            <ul>
-                                <li><a href="#">海淘资讯</a></li>
-                                <li><a href="#">网站公告</a></li>
-                                <li><a href="#">网站地图</a></li>
-                            </ul>
-                        </dd>
-                    </dl>
-                </div>
-                <div class="botewm">
-                    <ul class="cl">
-                        <li>
-                            <h5>微信订阅号</h5>
-                            <p>扫一扫有惊喜</p>
-                            <div class="ewmpic">
-                                <img src="images/help/ewm1.png" height="80" width="80" alt="">
-                                <span class="bigewm"></span>
-                            </div>
-                        </li>
-                        <li>
-                            <h5>微信服务号</h5>
-                            <p>扫一扫有惊喜</p>
-                            <div class="ewmpic">
-                                <img src="images/help/ewm2.png" height="80" width="80" alt="">
-                                <span class="bigewm"></span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="attus">
-                    <h5>关注我们</h5>
-                    <ul class="attshare">
-                        <li><a href="#"></a>
-                        </li>
-
-                        <li><a href="#"></a></li>
-
-                    </ul>
-                    <h5>邮件订阅</h5>
-                    <div class="feed" id="div_feed">
-                        <input type="text" id="txtEmail" class="ftxt" placeholder="请输入您的邮箱地址，订阅最新优惠">
-                        <input type="button" id="btnAddEmail" value="订阅" class="fbtn">
-                    </div>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>
-                    Copyright 2012-2016 海淘橙 haitaocheng.com. All Rights Reserved.
-                    <a ref="nofollow" href="#">粤ICP备14073754号-1</a>cript>
-                </p>
-            </div>
-        </div>
+        <script>
+            $("#footer").load("http://localhost/haitaocheng/footer.html");
+        </script>
     </footer>
 
     <script src="js/jquery.cookie.js"></script>

@@ -153,7 +153,6 @@
                     this.num += parseInt(this.tbody.children[i].children[4].children[0].children[1].value);
                 }
             }
-            console.log(this.num);
             this.allNum.innerHTML = '已选 <em>' + this.num + '</em> 件';
         }
         setMoney() {
