@@ -1,46 +1,46 @@
 ; (function ($) {
     "use strict";
-    let details = {
+    let goods = {
         init: function () {
-            details.url = "http://localhost/haitaocheng/data/goods.json";
-            details.goodId = document.location.href.split('?')[1];
-            details.getAjax();
+            goods.url = "http://localhost/haitaocheng/data/goods.json";
+            goods.goodId = document.location.href.split('?')[1];
+            goods.getAjax();
         },
         getAjax: function () {
             $.ajax({
                 url: this.url,
                 success: function (res) {
-                    details.res = res;
-                    details.getGood();
+                    goods.res = res;
+                    goods.getGood();
                 }
             });
         },
         getGood: function () {
             let t = false;
-            for (let i = 0; i < details.res.length; i++) {
-                if (details.goodId == details.res[i].goodsId) {
-                    details.res = details.res[i];
+            for (let i = 0; i < goods.res.length; i++) {
+                if (goods.goodId == goods.res[i].goodsId) {
+                    goods.res = goods.res[i];
                     t = true;
                     break;
                 }
             }
             if (t) {
-                details.display();
+                goods.display();
             } else {
                 console.error('数据解析错误!');
             }
 
         },
         display: function () {
-            $('title').html(details.res.name);
-            $('.bigpic').html(`<img src="${details.res.url}"/>`);
-            $('.photoglass').html(`<img src="${details.res.url}" class="lookphoto" />`);
-            $('.goodN').eq(0).html(`<span>${details.res.name}</span>`);
-            $('.goodN').eq(1).html(`<a href="#">${details.res.name}</a>`);
-            $('.nprice').html(`<em>￥${details.res.price}</em>`);
-            $('.proslogan').html(`<p>${details.res.tip}</p>
-                             <img src="${details.res.url}"/>`);
+            $('title').html(goods.res.name);
+            $('.bigpic').html(`<img src="${goods.res.url}"/>`);
+            $('.photoglass').html(`<img src="${goods.res.url}" class="lookphoto" />`);
+            $('.goodN').eq(0).html(`<span>${goods.res.name}</span>`);
+            $('.goodN').eq(1).html(`<a href="#">${goods.res.name}</a>`);
+            $('.nprice').html(`<em>￥${goods.res.price}</em>`);
+            $('.proslogan').html(`<p>${goods.res.tip}</p>
+                             <img src="${goods.res.url}"/>`);
         }
     }
-    details.init();
+    goods.init();
 })(jQuery);

@@ -2,14 +2,14 @@
     "use strict";
     let shop = {
         init: function () {
+            shop.info = $.cookie("info") ? JSON.parse($.cookie("info")) : [];
             shop.url = "http://localhost/haitaocheng/data/goods.json";
             shop.id = document.location.href.split('?')[1];
             shop.num = $('.numtxt');
-
+            shop.admin = '';
             shop.load();
         },
         load: function () {
-
             $('.minNum').on('click', function () {
                 if (shop.num.val() != 1) {
                     shop.num.val(shop.num.val() - 1)
@@ -19,7 +19,21 @@
                 shop.num.val(parseInt(shop.num.val()) + 1);
             });
             $('.addcart').on('click', function () {
-                shop.setCookie();
+                for (let i = 0; i < shop.info.length; i++) {
+                    if (shop.info[i].s == 1) {
+                        shop.admin = shop.info[i];
+                        break;
+                    }
+                }
+                if (shop.admin == '') {
+                    let t = confirm("请先登录!");
+                    if (t) {
+                        window.location = "http://localhost/haitaocheng/server.html";
+                    }
+                } else {
+                    alert('加入购物车成功!');
+                    shop.setCookie();
+                }
             });
         },
         setCookie: function () {
@@ -46,7 +60,7 @@
                     })
                 }
             }
-            $.cookie('goods', JSON.stringify(shop.goods),{expires:1000});
+            $.cookie('goods', JSON.stringify(shop.goods), { expires: 1000 });
             console.log(JSON.parse($.cookie('goods')));
         }
     }

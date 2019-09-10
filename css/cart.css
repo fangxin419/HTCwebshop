@@ -28,29 +28,50 @@ a:hover {
     min-height: 300px;
 }
 
+.cartmain2 table {
+    border: 1px solid #bbb;
+}
+
+.cartmain2 thead {
+    background: #ccc;
+}
+
+.cartmain2 tfoot {
+    background: #ccc;
+}
+
 .cartmain2 img {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
 }
 
 .cartmain2 th {
+    border: 1px solid #bbb;
     vertical-align: middle;
     text-align: center;
+    height: 60px;
 }
 
 .cartmain2 td {
+    border: 1px solid #bbb;
     text-align: center;
     vertical-align: middle;
-    height: 80px;
+    height: 100px;
 }
 
 .cartmain2 .remove {
     cursor: pointer;
 }
 
+.cartmain2 .qx{
+    width:16px;
+    height:16px;
+}
+
 .numselect {
     height: 30px;
-    width: 130px;
+    width: 150px;
     margin: 0 auto;
 }
 
@@ -59,7 +80,6 @@ a:hover {
 .numselect .maxNum {
     float: left;
     height: 30px;
-    margin-right: -1px;
     border: 1px solid #bfbfbf;
     text-align: center;
     padding: 0 10px;

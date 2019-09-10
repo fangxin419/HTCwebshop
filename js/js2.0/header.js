@@ -3,7 +3,6 @@
         init: function () {
             head.info = $.cookie("info") ? JSON.parse($.cookie("info")) : [];
             head.goods = $.cookie("goods") ? JSON.parse($.cookie("goods")) : [];
-            console.log(head.info);
             head.admin = "";
             head.display();
             head.load();
