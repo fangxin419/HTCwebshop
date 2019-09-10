@@ -1,15 +1,13 @@
-; (function ($) {
+define(function () {
     class Header {
         constructor() {
             this.info = $.cookie("info") ? JSON.parse($.cookie("info")) : [];
             this.goods = $.cookie("goods") ? JSON.parse($.cookie("goods")) : [];
             this.admin = "";
-            console.log(this.info);
             this.display();
             this.load();
         }
         display() {
-            this.admin = '';
             for (let i = 0; i < this.info.length; i++) {
                 if (this.info[i].s == 1) {
                     this.admin = this.info[i];
@@ -22,17 +20,18 @@
             } else {
                 $('.cart strong').html(0);
                 $('#userinfo').html(`Hi，欢迎来到海淘橙 <a href='server.html?0'>[登录]</a>
-                                                                    <a href='server.html?1'>[注册]</a>
-                                                                    <span class='tip'> 注册有礼</span>`);
+                                    <a href='server.html?1'>[注册]</a>
+                                    <span class='tip'> 注册有礼</span>`);
             }
         }
         setCookie() {
-            $.cookie("info", JSON.stringify(this.info), {
+            $.cookie("info", JSON.stringify(this.goods), {
                 expires: 365
             });
         }
         load() {
-            $('#userinfo').on('click', '.exit', () => {
+            $('#userinfo').on('click', '.exit', function () {
+                this.admin = '';
                 for (let i = 0; i < this.info.length; i++) {
                     if (this.info[i].s == 1) {
                         this.info[i].s = 0;
@@ -42,7 +41,7 @@
                 this.setCookie();
                 this.display();
             });
-            $('.cart').on('click', 'a', () => {
+            $('.cart').on('click', 'a', function () {
                 if (this.admin == '') {
                     event.preventDefault();
                     window.location = 'http://localhost/haitaocheng/server.html?0';
@@ -50,5 +49,7 @@
             });
         }
     }
-    new Header();
-})(jQuery);
+    return {
+        head: new Header
+    }
+});

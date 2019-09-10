@@ -1,0 +1,258 @@
+.location {
+    height: 35px;
+    line-height: 35px;
+    padding-left: 35px;
+    background: url(../images/module/icon/picon.png) no-repeat 12px 8px;
+    margin-bottom: 8px;
+
+    em {
+        padding: 0 5px;
+        font-family: simsun;
+        color: #999;
+    }
+}
+
+.protop {
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 5px 0;
+}
+
+.photoshow {
+    float: left;
+    border: 1px solid #bfbfbf;
+    background-color: #fff;
+    height: 440px;
+    width: 440px;
+    position: relative;
+
+    .bigpic {
+        width: 90%;
+        height: 90%;
+        margin: 20px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .move {
+        display: none;
+        position: absolute;
+        z-index: 99;
+        width: 200px;
+        height: 200px;
+        top: 0px;
+        left: 0px;
+        background-color: black;
+        opacity: 0.4;
+        margin: 0;
+    }
+}
+
+.photoglass {
+    display: none;
+    z-index: 99;
+    overflow: hidden;
+    border: 1px solid #bfbfbf;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    position: absolute;
+    height: 440px;
+    width: 440px;
+
+    .lookphoto {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 880px;
+        height: 880px;
+    }
+}
+
+.protopinfo {
+    float: right;
+    width: 680px;
+    color: #666;
+    margin-top: 20px;
+
+    h1 {
+        font-size: 18px;
+        margin-bottom: 4px;
+        color: #333;
+    }
+}
+
+.protinfo {
+    margin-top: 50px;
+
+    dt {
+        clear: both;
+        height: 20px;
+        width: 100px;
+        -ms-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+    }
+
+    dd {
+        padding-left: 100px;
+        margin-top: -20px;
+        margin-bottom: 15px;
+
+        a {
+            cursor: pointer;
+        }
+    }
+
+    .nprice {
+        font: bold 26px/1.5 Arial;
+        color: #ff9000;
+    }
+
+    .numselect {
+        height: 30px;
+        float: left;
+        margin-top: 5px;
+
+        .numtxt {
+            width: 35px;
+            font-family: Arial;
+        }
+    }
+}
+
+.protdl1 {
+    dd {
+        margin-top: -30px;
+        margin-bottom: 10px;
+    }
+}
+
+.protdl2 {
+    padding-bottom: 8px;
+
+    dd {
+        margin-top: -30px;
+    }
+}
+
+.protinfo .numselect .minNum,
+.protinfo .numselect .numtxt,
+.protinfo .numselect .maxNum {
+    float: left;
+    height: 18px;
+    margin-right: -1px;
+    border: 1px solid #bfbfbf;
+    line-height: 18px;
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+    font-family: simsun;
+}
+
+.buyop {
+    position: relative;
+
+    a {
+        &.addcart {
+            background-color: #f06129;
+            color: #fff;
+            font-size: 16px;
+            width: 160px;
+            height: 50px;
+            text-align: center;
+            display: inline-block;
+            line-height: 50px;
+            margin-right: 15px;
+            border-radius: 5px;
+            vertical-align: middle;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #cc430d;
+            }
+        }
+
+        &.addfav {
+            display: inline-block;
+            cursor: pointer;
+            height: 46px;
+            width: 156px;
+            border: 2px solid #ff9000;
+            font-size: 16px;
+            color: #ff9000;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 46px;
+        }
+
+        &.detail-btn-disabled {
+            background-color: #909090;
+            cursor: default;
+        }
+    }
+
+    .share {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+.promain {
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.pmleft {
+    float: left;
+    width: 960px;
+}
+
+.ptab {
+    background-color: #fff;
+}
+
+.ptabt {
+    border-bottom: 2px solid #ff9000;
+    width: 960px;
+    background-color: #fff;
+
+    li {
+        float: left;
+        margin-right: 2px;
+
+        a {
+            display: inline-block;
+            height: 34px;
+            line-height: 34px;
+            padding: 0 60px;
+            font-size: 14px;
+            color: #666;
+            background-color: #d9d9d9;
+        }
+
+        &.on {
+            a {
+                background-color: #ff9000;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.pmright {
+    float: right;
+    width: 220px;
+}
+
+.ptabc {
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+.proslogan {
+    padding: 20px;
+}

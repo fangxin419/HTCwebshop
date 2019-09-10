@@ -18,14 +18,10 @@
 <body>
     <header id="header">
         <div class="topbar">
-            <script>
-                $(".topbar").load("http://localhost/haitaocheng/header.html .topbarcon");
-            </script>
+            
         </div>
         <div class="hdwraper">
-            <script>
-                $(".hdwraper").load("http://localhost/haitaocheng/header.html #top");
-            </script>
+ 
         </div>
         <div id="hdwraper" class="navwrapper">
             <nav class="area mnav">
@@ -129,16 +125,15 @@
 
 
     <footer id="footer">
-        <script>
-            $("#footer").load("http://localhost/haitaocheng/footer.html");
-        </script>
+
     </footer>
 
-    <script src="js/jquery.cookie.js"></script>
+    <!-- <script src="js/jquery.cookie.js"></script> -->
     <script src="js/bigglass.js"></script>
     <script src="js/goods.js"></script>
-    <script src="js/shop.js"></script>
-    <script src="js/header.js"></script>
+    <script src="data/libs/require.js" data-main="js/require/shopReq"></script>
+    <!-- <script src="js/shop.js"></script>
+    <script src="js/header.js"></script> -->
 </body>
 
 </html>

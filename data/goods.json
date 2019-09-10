@@ -1,23 +1,23 @@
 [{
-        "name": "澳洲swisse瑞思 护肝保肝",
-        "price": "95",
-        "url": "images/goods/1.jpg",
-        "goodsId": "id1",
-        "tip": "澳洲swisse瑞思 护肝保肝片奶蓟草 解酒排毒120粒"
-    },
-    {
-        "name": "韩国jayjun保加利亚红玫",
-        "price": "52",
-        "url": "images/goods/2.jpg",
-        "goodsId": "id2",
-        "tip": "韩国jayjun保加利亚红玫瑰 水光面膜 补水美白抗皱淡斑抗敏 10片/盒"
-    },
-    {
         "name": "韩国LEADERS丽得姿美蒂尤",
         "price": "114",
+        "url": "images/goods/1.jpg",
+        "goodsId": "id1",
+        "tip": "韩国LEADERS丽得姿美蒂尤AMINO氨基酸面膜10片【因生产批采不同，包装略有差异，以收到实物为主】"
+    },
+    {
+        "name": "Movado 摩凡陀 Veturi 06",
+        "price": "2712",
+        "url": "images/goods/2.jpg",
+        "goodsId": "id2",
+        "tip": "Movado 摩凡陀 Veturi 0606337 男士时装腕表"
+    },
+    {
+        "name": "澳洲swisse瑞思 护肝保肝",
+        "price": "95",
         "url": "images/goods/3.jpg",
         "goodsId": "id3",
-        "tip": "韩国LEADERS丽得姿美蒂尤AMINO氨基酸面膜10片【因生产批采不同，包装略有差异，以收到实物为主】"
+        "tip": "澳洲swisse瑞思 护肝保肝片奶蓟草 解酒排毒120粒"
     },
     {
         "name": "美国GNC/健安喜 Triflex",
@@ -27,25 +27,25 @@
         "tip": "美国GNC/健安喜 Triflex快速维骨力 葡萄糖胺 氨糖软骨素MSM（240片/瓶）"
     },
     {
-        "name": "澳洲 Swisse瑞思 蔓越莓",
-        "price": "72",
+        "name": "2016款，Fossil 化石 女",
+        "price": "745",
         "url": "images/goods/5.jpg",
         "goodsId": "id5",
-        "tip": "澳洲 Swisse瑞思 蔓越莓 30粒"
+        "tip": "2016款，Fossil 化石 女士小号斜挎包 两色可选"
+    },
+    {
+        "name": "韩国jayjun保加利亚红玫",
+        "price": "52",
+        "url": "images/goods/6.jpg",
+        "goodsId": "id6",
+        "tip": "韩国jayjun保加利亚红玫瑰 水光面膜 补水美白抗皱淡斑抗敏 10片/盒"
     },
     {
         "name": "港版雅培Abbott",
         "price": "338",
-        "url": "images/goods/6.jpg",
-        "goodsId": "id6",
-        "tip": "港版雅培Abbott 心美力3段（1-3岁）幼儿助长奶粉 900g"
-    },
-    {
-        "name": "Movado 摩凡陀 Veturi 06",
-        "price": "2712",
         "url": "images/goods/7.jpg",
         "goodsId": "id7",
-        "tip": "Movado 摩凡陀 Veturi 0606337 男士时装腕表"
+        "tip": "港版雅培Abbott 心美力3段（1-3岁）幼儿助长奶粉 900g"
     },
     {
         "name": "Skechers斯凯奇 USA Casc",
@@ -69,11 +69,11 @@
         "tip": "Tommy Hilfiger Lucky Charm Pebble 女士真皮长款钱包 多色可选"
     },
     {
-        "name": "2016款，Fossil 化石 女",
-        "price": "745",
+        "name": "澳洲 Swisse瑞思 蔓越莓",
+        "price": "72",
         "url": "images/goods/11.jpg",
         "goodsId": "id11",
-        "tip": "2016款，Fossil 化石 女士小号斜挎包 两色可选"
+        "tip": "澳洲 Swisse瑞思 蔓越莓 30粒"
     },
     {
         "name": "ECCO 爱步 Contoured 男",
@@ -83,18 +83,18 @@
         "tip": "ECCO 爱步 Contoured 男士真皮休闲鞋 多色可选"
     },
     {
-        "name": "Columbia 哥伦比亚 男士真皮 皮带",
-        "price": "152",
+        "name": "Polo 男士双显手表",
+        "price": "147",
         "url": "images/goods/13.jpg",
         "goodsId": "id13",
-        "tip": "Columbia 哥伦比亚 男士真皮 皮带"
+        "tip": "U.S. Polo Assn.US9047 款男士双显手表"
     },
     {
-        "name": "Levi's李维斯男士皮带",
-        "price": "141",
+        "name": "Tissot天梭力自动机械男表",
+        "price": "2673",
         "url": "images/goods/14.jpg",
         "goodsId": "id14",
-        "tip": "Levi's Men's Bridle Belt With Ornament 李维斯男士皮带"
+        "tip": "Tissot T41148333 天梭力洛克系列自动机械男表"
     },
     {
         "name": "SEIKO精工人工动能腕表",
@@ -104,11 +104,11 @@
         "tip": "SEIKO SKA553 Kinetic Watch 精工人工动能腕表"
     },
     {
-        "name": "Tissot天梭力自动机械男表",
-        "price": "2673",
+        "name": "Levi's李维斯男士皮带",
+        "price": "141",
         "url": "images/goods/16.jpg",
         "goodsId": "id16",
-        "tip": "Tissot T41148333 天梭力洛克系列自动机械男表"
+        "tip": "Levi's Men's Bridle Belt With Ornament 李维斯男士皮带"
     },
     {
         "name": "汤米希尔费格男士双面皮带",
@@ -118,11 +118,11 @@
         "tip": "Tommy Hilfiger 汤米希尔费格男士双面皮带"
     },
     {
-        "name": "Polo 男士双显手表",
-        "price": "147",
+        "name": "Columbia 哥伦比亚 男士真皮 皮带",
+        "price": "152",
         "url": "images/goods/18.jpg",
         "goodsId": "id18",
-        "tip": "U.S. Polo Assn.US9047 款男士双显手表"
+        "tip": "Columbia 哥伦比亚 男士真皮 皮带"
     },
     {
         "name": "CITIZEN光动能男表",

@@ -1,8 +1,11 @@
-; (function ($) {
+define(function () {
     class Car {
-        constructor() {
+        constructor(options) {
             this.url = "http://localhost/haitaocheng/data/goods.json";
-            this.goods = $.cookie("goods") ? JSON.parse($.cookie("goods")) : [];
+            this.goods = options.goods;
+            this.headDis = options.headDis;
+            this.info = options.info;
+            this.admin = "";
             this.tbody = document.querySelector("tbody");
             this.qx = document.querySelector('.qx');
             this.remove = document.querySelector(".remove");
@@ -85,7 +88,7 @@
                 let e = eve || window.event;
                 let tar = e.target || e.srcElement;
                 if (tar.className == "delete") {
-                    let t = confirm("确认删除该商品??");
+                    let t = confirm("确认删除该商品?");
                     if (t) {
                         this.id = tar.parentNode.parentNode.getAttribute("index");
                         tar.parentNode.parentNode.remove();
@@ -93,6 +96,7 @@
                             this.goods.splice(i, 1);
                             this.setNum();
                             this.setMoney();
+                            this.headDis();
                             if (this.goods.length < 1) {
                                 $('.cartmain2').hide();
                                 $('.cartmain').show();
@@ -179,5 +183,7 @@
             });
         }
     }
-    new Car();
-})(jQuery);
+    return {
+        car: Car
+    }
+});

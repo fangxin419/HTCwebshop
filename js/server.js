@@ -1,5 +1,5 @@
 ; (function ($) {
-    // msg = {
+    // info = {
     //     name: '姓名',
     //     pass: '密码',
     //     s: '登录状态'
@@ -10,6 +10,7 @@
             server.status = server.status || 0;
             server.info = $.cookie("info") ? JSON.parse($.cookie("info")) : [];
             server.error = '';
+            console.log(server.info);
             server.off = false;
             server.state();
             server.load();
@@ -104,7 +105,6 @@
                         break;
                     }
                 }
-                console.log(server.info);
                 if (logoff) {
                     server.hideError();
                     window.location = 'http://localhost/haitaocheng/index.html';
