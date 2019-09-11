@@ -1,11 +1,8 @@
-define(function () {
+; (function ($) {
     class Car {
-        constructor(options) {
+        constructor() {
             this.url = "http://localhost/haitaocheng/data/goods.json";
-            this.goods = options.goods;
-            this.headDis = options.headDis;
-            this.info = options.info;
-            this.admin = "";
+            this.goods = $.cookie("goods") ? JSON.parse($.cookie("goods")) : [];
             this.tbody = document.querySelector("tbody");
             this.qx = document.querySelector('.qx');
             this.remove = document.querySelector(".remove");
@@ -26,13 +23,7 @@ define(function () {
         }
         display() {
             let str = "";
-            for (let i = 0; i < this.info.length; i++) {
-                if (this.info[i].s == 1) {
-                    this.admin = this.info[i];
-                    break;
-                }
-            }
-            if (this.goods.length < 1 || this.admin == '') {
+            if (this.goods.length < 1) {
                 $('.cartmain2').hide();
                 $('.cartmain').show();
             } else {
@@ -102,7 +93,6 @@ define(function () {
                             this.goods.splice(i, 1);
                             this.setNum();
                             this.setMoney();
-                            this.headDis();
                             if (this.goods.length < 1) {
                                 $('.cartmain2').hide();
                                 $('.cartmain').show();
@@ -189,7 +179,5 @@ define(function () {
             });
         }
     }
-    return {
-        car: Car
-    }
-});
+    new Car();
+})(jQuery);

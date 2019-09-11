@@ -1,4 +1,4 @@
-define(function () {
+; (function () {
     class Header {
         constructor() {
             this.info = $.cookie("info") ? JSON.parse($.cookie("info")) : [];
@@ -23,6 +23,7 @@ define(function () {
                                     <a href='server.html?1'>[注册]</a>
                                     <span class='tip'> 注册有礼</span>`);
             }
+
         }
         setCookie() {
             $.cookie("info", JSON.stringify(this.info), {
@@ -30,7 +31,7 @@ define(function () {
             });
         }
         load() {
-            $('#userinfo').on('click', '.exit', () => {
+            $('#userinfo').on('click', '.exit', function () {
                 this.admin = '';
                 for (let i = 0; i < this.info.length; i++) {
                     if (this.info[i].s == 1) {
@@ -41,15 +42,13 @@ define(function () {
                 this.setCookie();
                 this.display();
             });
-            $('.cart').on('click', 'a', () => {
+            $('.cart').on('click', 'a', function () {
                 if (this.admin == '') {
                     event.preventDefault();
-                    window.location = 'http://localhost/haitaocheng/server.html?0';
+                    window.location = 'http://localhost/htc/server.html?0';
                 }
             });
         }
     }
-    return {
-        head: new Header
-    }
-});
+    new Header();
+})();

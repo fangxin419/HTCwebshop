@@ -55,7 +55,7 @@
             let str = '';
             for (let i = min - 1; i < min + num - 1; i++) {
                 str += `<li>
-                            <a href="http://localhost/haitaocheng/this.html?${this.res[i].thisId}">
+                            <a href="http://localhost/haitaocheng/goods.html?${this.res[i].goodsId}">
                             <img style="background:url(http://localhost/haitaocheng/images/lazy_loading.gif) no-repeat center" data-src="${this.res[i].url}" height="150" width="150">
                                 <h6>${this.res[i].name}</h6>
                                 <p><span class="newprice"><em>海淘价：</em>￥<strong>${this.res[i].price}</strong></span></p>

@@ -35,6 +35,21 @@ define(function () {
                     this.headDis();
                 }
             });
+            $('.addfav').on('click', () => {
+                for (let i = 0; i < this.info.length; i++) {
+                    if (this.info[i].s == 1) {
+                        this.admin = this.info[i];
+                        break;
+                    }
+                }
+                if (this.admin == '') {
+                    event.preventDefault();
+                    let t = confirm("请先登录!");
+                    if (t) {
+                        window.location = "http://localhost/haitaocheng/server.html";
+                    }
+                }
+            });
         }
         setCookie() {
             if (this.goods.length < 1) {

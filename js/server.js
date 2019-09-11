@@ -115,7 +115,6 @@
             });
             $('.reg-btn').on('click', function () {
                 server.hideError();
-                console.log(server.info);
                 let name = $('.name-r').val();
                 let pass = $('.pass1-r').val();
                 for (let i = 0; i < server.info.length; i++) {
