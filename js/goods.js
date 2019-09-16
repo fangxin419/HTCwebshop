@@ -1,6 +1,6 @@
 class Goods {
     constructor() {
-        this.url = "http://localhost/haitaocheng/data/goods.json";
+        this.url = "data/goods.json";
         this.goodId = document.location.href.split('?')[1];
         this.getAjax();
     }
@@ -30,9 +30,9 @@ class Goods {
 
     }
     display() {
-        $(".topbar").load("http://localhost/haitaocheng/header.html .topbarcon");
-        $(".hdwraper").load("http://localhost/haitaocheng/header.html #top");
-        $("#footer").load("http://localhost/haitaocheng/footer.html");
+        $(".topbar").load("header.html .topbarcon");
+        $(".hdwraper").load("header.html #top");
+        $("#footer").load("footer.html");
         $('title').html(this.res.name);
         $('.bigpic').html(`<img src="${this.res.url}"/>`);
         $('.photoglass').html(`<img src="${this.res.url}" class="lookphoto" />`);

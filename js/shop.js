@@ -27,7 +27,7 @@ define(function () {
                 if (this.admin == '') {
                     let t = confirm("请先登录!");
                     if (t) {
-                        window.location = "http://localhost/haitaocheng/server.html";
+                        window.location = "server.html";
                     }
                 } else {
                     alert('加入购物车成功!');
@@ -46,7 +46,7 @@ define(function () {
                     event.preventDefault();
                     let t = confirm("请先登录!");
                     if (t) {
-                        window.location = "http://localhost/haitaocheng/server.html";
+                        window.location = "server.html";
                     }
                 }
             });

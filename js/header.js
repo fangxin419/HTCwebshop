@@ -45,7 +45,7 @@
             $('.cart').on('click', 'a', () => {
                 if (this.admin == '') {
                     event.preventDefault();
-                    window.location = 'http://localhost/haitaocheng/server.html?0';
+                    window.location = 'server.html?0';
                 }
             });
         }

@@ -1,7 +1,7 @@
 define(function () {
     class Car {
         constructor(options) {
-            this.url = "http://localhost/haitaocheng/data/goods.json";
+            this.url = "data/goods.json";
             this.goods = options.goods;
             this.headDis = options.headDis;
             this.info = options.info;

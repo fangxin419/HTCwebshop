@@ -10,7 +10,6 @@
             server.status = server.status || 0;
             server.info = $.cookie("info") ? JSON.parse($.cookie("info")) : [];
             server.error = '';
-            console.log(server.info);
             server.off = false;
             server.state();
             server.load();
@@ -66,7 +65,6 @@
                 server.off = true;
                 server.hideError();
                 for (let i = 0; i < server.info.length; i++) {
-                    console.log($(this).val() == server.info[i].name);
                     if ($(this).val() == server.info[i].name) {
                         server.error = '该用户名已存在!';
                         server.showError();
@@ -107,7 +105,7 @@
                 }
                 if (logoff) {
                     server.hideError();
-                    window.location = 'http://localhost/haitaocheng/index.html';
+                    window.location = 'index.html';
                 } else {
                     server.error = '请输入正确的用户名或密码!';
                     server.showError();

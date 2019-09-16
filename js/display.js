@@ -1,7 +1,7 @@
 ; (function ($) {
     class Display {
         constructor() {
-            this.url = "http://localhost/haitaocheng/data/goods.json";
+            this.url = "data/goods.json";
             this.getAjax();
         }
         getAjax() {
@@ -34,11 +34,11 @@
             let str = '';
             for (let i = min - 1, j = 1; i < min + num - 1; i++ , j++) {
                 str += `<li>
-                            <a href="http://localhost/haitaocheng/goods.html?${this.res[i].goodsId}">
+                            <a href="goods.html?${this.res[i].goodsId}">
                                 <h6>${this.res[i].name}</h6>
                                 <div class="pic">
                                     <span class="img-inner">
-                                    <img style="background:url(http://localhost/haitaocheng/images/lazy_loading.gif) no-repeat center" data-src="${this.res[i].url}" height="120" width="120">
+                                    <img style="background:url(images/lazy_loading.gif) no-repeat center" data-src="${this.res[i].url}" height="120" width="120">
                                     </span>
                                 </div>
                                 <div class="price">
@@ -55,8 +55,8 @@
             let str = '';
             for (let i = min - 1; i < min + num - 1; i++) {
                 str += `<li>
-                            <a href="http://localhost/haitaocheng/goods.html?${this.res[i].goodsId}">
-                            <img style="background:url(http://localhost/haitaocheng/images/lazy_loading.gif) no-repeat center" data-src="${this.res[i].url}" height="150" width="150">
+                            <a href="goods.html?${this.res[i].goodsId}">
+                            <img style="background:url(images/lazy_loading.gif) no-repeat center" data-src="${this.res[i].url}" height="150" width="150">
                                 <h6>${this.res[i].name}</h6>
                                 <p><span class="newprice"><em>海淘价：</em>￥<strong>${this.res[i].price}</strong></span></p>
                             </a>
